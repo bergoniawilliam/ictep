@@ -1,0 +1,1179 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites>
+  <testsuite name="/var/www/html/phpunit.xml" tests="25" assertions="2" errors="23" failures="0" skipped="0" time="0.058832">
+    <testsuite name="Unit" tests="1" assertions="1" errors="0" failures="0" skipped="0" time="0.011101">
+      <testsuite name="Tests\Unit\ExampleTest" file="/var/www/html/tests/Unit/ExampleTest.php" tests="1" assertions="1" errors="0" failures="0" skipped="0" time="0.011101">
+        <testcase name="test_that_true_is_true" file="/var/www/html/tests/Unit/ExampleTest.php" line="12" class="Tests\Unit\ExampleTest" classname="Tests.Unit.ExampleTest" assertions="1" time="0.011101"/>
+      </testsuite>
+    </testsuite>
+    <testsuite name="Feature" tests="24" assertions="1" errors="23" failures="0" skipped="0" time="0.047731">
+      <testsuite name="Tests\Feature\Auth\AuthenticationTest" file="/var/www/html/tests/Feature/Auth/AuthenticationTest.php" tests="4" assertions="0" errors="4" failures="0" skipped="0" time="0.000000">
+        <testcase name="test_login_screen_can_be_rendered" file="/var/www/html/tests/Feature/Auth/AuthenticationTest.php" line="14" class="Tests\Feature\Auth\AuthenticationTest" classname="Tests.Feature.Auth.AuthenticationTest" assertions="0" time="0.000000">
+          <error type="Illuminate\Database\QueryException">Tests\Feature\Auth\AuthenticationTest::test_login_screen_can_be_rendered
+Illuminate\Database\QueryException: SQLSTATE[HY000] [2002] php_network_getaddresses: getaddrinfo for mysql failed: Try again (Connection: mysql, SQL: select table_name as `name`, (data_length + index_length) as `size`, table_comment as `comment`, engine as `engine`, table_collation as `collation` from information_schema.tables where table_schema = 'ictepmms' and table_type in ('BASE TABLE', 'SYSTEM VERSIONED') order by table_name)
+
+/var/www/html/vendor/laravel/framework/src/Illuminate/Database/Connection.php:829
+/var/www/html/vendor/laravel/framework/src/Illuminate/Database/Connection.php:983
+/var/www/html/vendor/laravel/framework/src/Illuminate/Database/Connection.php:962
+/var/www/html/vendor/laravel/framework/src/Illuminate/Database/Connection.php:785
+/var/www/html/vendor/laravel/framework/src/Illuminate/Database/Connection.php:414
+/var/www/html/vendor/laravel/framework/src/Illuminate/Database/Connection.php:401
+/var/www/html/vendor/laravel/framework/src/Illuminate/Database/Schema/MySqlBuilder.php:41
+/var/www/html/vendor/laravel/framework/src/Illuminate/Database/Schema/MySqlBuilder.php:147
+/var/www/html/vendor/laravel/framework/src/Illuminate/Database/Console/WipeCommand.php:71
+/var/www/html/vendor/laravel/framework/src/Illuminate/Database/Console/WipeCommand.php:48
+/var/www/html/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php:36
+/var/www/html/vendor/laravel/framework/src/Illuminate/Container/Util.php:41
+/var/www/html/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php:93
+/var/www/html/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php:35
+/var/www/html/vendor/laravel/framework/src/Illuminate/Container/Container.php:662
+/var/www/html/vendor/laravel/framework/src/Illuminate/Console/Command.php:211
+/var/www/html/vendor/symfony/console/Command/Command.php:326
+/var/www/html/vendor/laravel/framework/src/Illuminate/Console/Command.php:180
+/var/www/html/vendor/laravel/framework/src/Illuminate/Console/Concerns/CallsCommands.php:67
+/var/www/html/vendor/laravel/framework/src/Illuminate/Console/Concerns/CallsCommands.php:40
+/var/www/html/vendor/laravel/framework/src/Illuminate/Database/Console/Migrations/FreshCommand.php:44
+/var/www/html/vendor/laravel/framework/src/Illuminate/Console/View/Components/Task.php:37
+/var/www/html/vendor/laravel/framework/src/Illuminate/Console/View/Components/Factory.php:58
+/var/www/html/vendor/laravel/framework/src/Illuminate/Database/Console/Migrations/FreshCommand.php:44
+/var/www/html/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php:36
+/var/www/html/vendor/laravel/framework/src/Illuminate/Container/Util.php:41
+/var/www/html/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php:93
+/var/www/html/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php:35
+/var/www/html/vendor/laravel/framework/src/Illuminate/Container/Container.php:662
+/var/www/html/vendor/laravel/framework/src/Illuminate/Console/Command.php:211
+/var/www/html/vendor/symfony/console/Command/Command.php:326
+/var/www/html/vendor/laravel/framework/src/Illuminate/Console/Command.php:180
+/var/www/html/vendor/symfony/console/Application.php:1078
+/var/www/html/vendor/symfony/console/Application.php:324
+/var/www/html/vendor/symfony/console/Application.php:175
+/var/www/html/vendor/laravel/framework/src/Illuminate/Console/Application.php:162
+/var/www/html/vendor/laravel/framework/src/Illuminate/Foundation/Console/Kernel.php:400
+/var/www/html/vendor/laravel/framework/src/Illuminate/Testing/PendingCommand.php:297
+/var/www/html/vendor/laravel/framework/src/Illuminate/Testing/PendingCommand.php:484
+/var/www/html/vendor/laravel/framework/src/Illuminate/Foundation/Testing/Concerns/InteractsWithConsole.php:80
+/var/www/html/vendor/laravel/framework/src/Illuminate/Foundation/Testing/RefreshDatabase.php:73
+/var/www/html/vendor/laravel/framework/src/Illuminate/Foundation/Testing/RefreshDatabase.php:23
+/var/www/html/vendor/laravel/framework/src/Illuminate/Foundation/Testing/Concerns/InteractsWithTestCaseLifecycle.php:183
+/var/www/html/vendor/laravel/framework/src/Illuminate/Foundation/Testing/Concerns/InteractsWithTestCaseLifecycle.php:84
+/var/www/html/vendor/laravel/framework/src/Illuminate/Foundation/Testing/TestCase.php:40</error>
+        </testcase>
+        <testcase name="test_users_can_authenticate_using_the_login_screen" file="/var/www/html/tests/Feature/Auth/AuthenticationTest.php" line="21" class="Tests\Feature\Auth\AuthenticationTest" classname="Tests.Feature.Auth.AuthenticationTest" assertions="0" time="0.000000">
+          <error type="Illuminate\Database\QueryException">Tests\Feature\Auth\AuthenticationTest::test_users_can_authenticate_using_the_login_screen
+Illuminate\Database\QueryException: SQLSTATE[HY000] [2002] php_network_getaddresses: getaddrinfo for mysql failed: Try again (Connection: mysql, SQL: select table_name as `name`, (data_length + index_length) as `size`, table_comment as `comment`, engine as `engine`, table_collation as `collation` from information_schema.tables where table_schema = 'ictepmms' and table_type in ('BASE TABLE', 'SYSTEM VERSIONED') order by table_name)
+
+/var/www/html/vendor/laravel/framework/src/Illuminate/Database/Connection.php:829
+/var/www/html/vendor/laravel/framework/src/Illuminate/Database/Connection.php:983
+/var/www/html/vendor/laravel/framework/src/Illuminate/Database/Connection.php:962
+/var/www/html/vendor/laravel/framework/src/Illuminate/Database/Connection.php:785
+/var/www/html/vendor/laravel/framework/src/Illuminate/Database/Connection.php:414
+/var/www/html/vendor/laravel/framework/src/Illuminate/Database/Connection.php:401
+/var/www/html/vendor/laravel/framework/src/Illuminate/Database/Schema/MySqlBuilder.php:41
+/var/www/html/vendor/laravel/framework/src/Illuminate/Database/Schema/MySqlBuilder.php:147
+/var/www/html/vendor/laravel/framework/src/Illuminate/Database/Console/WipeCommand.php:71
+/var/www/html/vendor/laravel/framework/src/Illuminate/Database/Console/WipeCommand.php:48
+/var/www/html/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php:36
+/var/www/html/vendor/laravel/framework/src/Illuminate/Container/Util.php:41
+/var/www/html/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php:93
+/var/www/html/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php:35
+/var/www/html/vendor/laravel/framework/src/Illuminate/Container/Container.php:662
+/var/www/html/vendor/laravel/framework/src/Illuminate/Console/Command.php:211
+/var/www/html/vendor/symfony/console/Command/Command.php:326
+/var/www/html/vendor/laravel/framework/src/Illuminate/Console/Command.php:180
+/var/www/html/vendor/laravel/framework/src/Illuminate/Console/Concerns/CallsCommands.php:67
+/var/www/html/vendor/laravel/framework/src/Illuminate/Console/Concerns/CallsCommands.php:40
+/var/www/html/vendor/laravel/framework/src/Illuminate/Database/Console/Migrations/FreshCommand.php:44
+/var/www/html/vendor/laravel/framework/src/Illuminate/Console/View/Components/Task.php:37
+/var/www/html/vendor/laravel/framework/src/Illuminate/Console/View/Components/Factory.php:58
+/var/www/html/vendor/laravel/framework/src/Illuminate/Database/Console/Migrations/FreshCommand.php:44
+/var/www/html/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php:36
+/var/www/html/vendor/laravel/framework/src/Illuminate/Container/Util.php:41
+/var/www/html/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php:93
+/var/www/html/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php:35
+/var/www/html/vendor/laravel/framework/src/Illuminate/Container/Container.php:662
+/var/www/html/vendor/laravel/framework/src/Illuminate/Console/Command.php:211
+/var/www/html/vendor/symfony/console/Command/Command.php:326
+/var/www/html/vendor/laravel/framework/src/Illuminate/Console/Command.php:180
+/var/www/html/vendor/symfony/console/Application.php:1078
+/var/www/html/vendor/symfony/console/Application.php:324
+/var/www/html/vendor/symfony/console/Application.php:175
+/var/www/html/vendor/laravel/framework/src/Illuminate/Console/Application.php:162
+/var/www/html/vendor/laravel/framework/src/Illuminate/Foundation/Console/Kernel.php:400
+/var/www/html/vendor/laravel/framework/src/Illuminate/Testing/PendingCommand.php:297
+/var/www/html/vendor/laravel/framework/src/Illuminate/Testing/PendingCommand.php:484
+/var/www/html/vendor/laravel/framework/src/Illuminate/Foundation/Testing/Concerns/InteractsWithConsole.php:80
+/var/www/html/vendor/laravel/framework/src/Illuminate/Foundation/Testing/RefreshDatabase.php:73
+/var/www/html/vendor/laravel/framework/src/Illuminate/Foundation/Testing/RefreshDatabase.php:23
+/var/www/html/vendor/laravel/framework/src/Illuminate/Foundation/Testing/Concerns/InteractsWithTestCaseLifecycle.php:183
+/var/www/html/vendor/laravel/framework/src/Illuminate/Foundation/Testing/Concerns/InteractsWithTestCaseLifecycle.php:84
+/var/www/html/vendor/laravel/framework/src/Illuminate/Foundation/Testing/TestCase.php:40</error>
+        </testcase>
+        <testcase name="test_users_can_not_authenticate_with_invalid_password" file="/var/www/html/tests/Feature/Auth/AuthenticationTest.php" line="34" class="Tests\Feature\Auth\AuthenticationTest" classname="Tests.Feature.Auth.AuthenticationTest" assertions="0" time="0.000000">
+          <error type="Illuminate\Database\QueryException">Tests\Feature\Auth\AuthenticationTest::test_users_can_not_authenticate_with_invalid_password
+Illuminate\Database\QueryException: SQLSTATE[HY000] [2002] php_network_getaddresses: getaddrinfo for mysql failed: Try again (Connection: mysql, SQL: select table_name as `name`, (data_length + index_length) as `size`, table_comment as `comment`, engine as `engine`, table_collation as `collation` from information_schema.tables where table_schema = 'ictepmms' and table_type in ('BASE TABLE', 'SYSTEM VERSIONED') order by table_name)
+
+/var/www/html/vendor/laravel/framework/src/Illuminate/Database/Connection.php:829
+/var/www/html/vendor/laravel/framework/src/Illuminate/Database/Connection.php:983
+/var/www/html/vendor/laravel/framework/src/Illuminate/Database/Connection.php:962
+/var/www/html/vendor/laravel/framework/src/Illuminate/Database/Connection.php:785
+/var/www/html/vendor/laravel/framework/src/Illuminate/Database/Connection.php:414
+/var/www/html/vendor/laravel/framework/src/Illuminate/Database/Connection.php:401
+/var/www/html/vendor/laravel/framework/src/Illuminate/Database/Schema/MySqlBuilder.php:41
+/var/www/html/vendor/laravel/framework/src/Illuminate/Database/Schema/MySqlBuilder.php:147
+/var/www/html/vendor/laravel/framework/src/Illuminate/Database/Console/WipeCommand.php:71
+/var/www/html/vendor/laravel/framework/src/Illuminate/Database/Console/WipeCommand.php:48
+/var/www/html/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php:36
+/var/www/html/vendor/laravel/framework/src/Illuminate/Container/Util.php:41
+/var/www/html/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php:93
+/var/www/html/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php:35
+/var/www/html/vendor/laravel/framework/src/Illuminate/Container/Container.php:662
+/var/www/html/vendor/laravel/framework/src/Illuminate/Console/Command.php:211
+/var/www/html/vendor/symfony/console/Command/Command.php:326
+/var/www/html/vendor/laravel/framework/src/Illuminate/Console/Command.php:180
+/var/www/html/vendor/laravel/framework/src/Illuminate/Console/Concerns/CallsCommands.php:67
+/var/www/html/vendor/laravel/framework/src/Illuminate/Console/Concerns/CallsCommands.php:40
+/var/www/html/vendor/laravel/framework/src/Illuminate/Database/Console/Migrations/FreshCommand.php:44
+/var/www/html/vendor/laravel/framework/src/Illuminate/Console/View/Components/Task.php:37
+/var/www/html/vendor/laravel/framework/src/Illuminate/Console/View/Components/Factory.php:58
+/var/www/html/vendor/laravel/framework/src/Illuminate/Database/Console/Migrations/FreshCommand.php:44
+/var/www/html/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php:36
+/var/www/html/vendor/laravel/framework/src/Illuminate/Container/Util.php:41
+/var/www/html/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php:93
+/var/www/html/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php:35
+/var/www/html/vendor/laravel/framework/src/Illuminate/Container/Container.php:662
+/var/www/html/vendor/laravel/framework/src/Illuminate/Console/Command.php:211
+/var/www/html/vendor/symfony/console/Command/Command.php:326
+/var/www/html/vendor/laravel/framework/src/Illuminate/Console/Command.php:180
+/var/www/html/vendor/symfony/console/Application.php:1078
+/var/www/html/vendor/symfony/console/Application.php:324
+/var/www/html/vendor/symfony/console/Application.php:175
+/var/www/html/vendor/laravel/framework/src/Illuminate/Console/Application.php:162
+/var/www/html/vendor/laravel/framework/src/Illuminate/Foundation/Console/Kernel.php:400
+/var/www/html/vendor/laravel/framework/src/Illuminate/Testing/PendingCommand.php:297
+/var/www/html/vendor/laravel/framework/src/Illuminate/Testing/PendingCommand.php:484
+/var/www/html/vendor/laravel/framework/src/Illuminate/Foundation/Testing/Concerns/InteractsWithConsole.php:80
+/var/www/html/vendor/laravel/framework/src/Illuminate/Foundation/Testing/RefreshDatabase.php:73
+/var/www/html/vendor/laravel/framework/src/Illuminate/Foundation/Testing/RefreshDatabase.php:23
+/var/www/html/vendor/laravel/framework/src/Illuminate/Foundation/Testing/Concerns/InteractsWithTestCaseLifecycle.php:183
+/var/www/html/vendor/laravel/framework/src/Illuminate/Foundation/Testing/Concerns/InteractsWithTestCaseLifecycle.php:84
+/var/www/html/vendor/laravel/framework/src/Illuminate/Foundation/Testing/TestCase.php:40</error>
+        </testcase>
+        <testcase name="test_users_can_logout" file="/var/www/html/tests/Feature/Auth/AuthenticationTest.php" line="46" class="Tests\Feature\Auth\AuthenticationTest" classname="Tests.Feature.Auth.AuthenticationTest" assertions="0" time="0.000000">
+          <error type="Illuminate\Database\QueryException">Tests\Feature\Auth\AuthenticationTest::test_users_can_logout
+Illuminate\Database\QueryException: SQLSTATE[HY000] [2002] php_network_getaddresses: getaddrinfo for mysql failed: Try again (Connection: mysql, SQL: select table_name as `name`, (data_length + index_length) as `size`, table_comment as `comment`, engine as `engine`, table_collation as `collation` from information_schema.tables where table_schema = 'ictepmms' and table_type in ('BASE TABLE', 'SYSTEM VERSIONED') order by table_name)
+
+/var/www/html/vendor/laravel/framework/src/Illuminate/Database/Connection.php:829
+/var/www/html/vendor/laravel/framework/src/Illuminate/Database/Connection.php:983
+/var/www/html/vendor/laravel/framework/src/Illuminate/Database/Connection.php:962
+/var/www/html/vendor/laravel/framework/src/Illuminate/Database/Connection.php:785
+/var/www/html/vendor/laravel/framework/src/Illuminate/Database/Connection.php:414
+/var/www/html/vendor/laravel/framework/src/Illuminate/Database/Connection.php:401
+/var/www/html/vendor/laravel/framework/src/Illuminate/Database/Schema/MySqlBuilder.php:41
+/var/www/html/vendor/laravel/framework/src/Illuminate/Database/Schema/MySqlBuilder.php:147
+/var/www/html/vendor/laravel/framework/src/Illuminate/Database/Console/WipeCommand.php:71
+/var/www/html/vendor/laravel/framework/src/Illuminate/Database/Console/WipeCommand.php:48
+/var/www/html/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php:36
+/var/www/html/vendor/laravel/framework/src/Illuminate/Container/Util.php:41
+/var/www/html/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php:93
+/var/www/html/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php:35
+/var/www/html/vendor/laravel/framework/src/Illuminate/Container/Container.php:662
+/var/www/html/vendor/laravel/framework/src/Illuminate/Console/Command.php:211
+/var/www/html/vendor/symfony/console/Command/Command.php:326
+/var/www/html/vendor/laravel/framework/src/Illuminate/Console/Command.php:180
+/var/www/html/vendor/laravel/framework/src/Illuminate/Console/Concerns/CallsCommands.php:67
+/var/www/html/vendor/laravel/framework/src/Illuminate/Console/Concerns/CallsCommands.php:40
+/var/www/html/vendor/laravel/framework/src/Illuminate/Database/Console/Migrations/FreshCommand.php:44
+/var/www/html/vendor/laravel/framework/src/Illuminate/Console/View/Components/Task.php:37
+/var/www/html/vendor/laravel/framework/src/Illuminate/Console/View/Components/Factory.php:58
+/var/www/html/vendor/laravel/framework/src/Illuminate/Database/Console/Migrations/FreshCommand.php:44
+/var/www/html/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php:36
+/var/www/html/vendor/laravel/framework/src/Illuminate/Container/Util.php:41
+/var/www/html/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php:93
+/var/www/html/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php:35
+/var/www/html/vendor/laravel/framework/src/Illuminate/Container/Container.php:662
+/var/www/html/vendor/laravel/framework/src/Illuminate/Console/Command.php:211
+/var/www/html/vendor/symfony/console/Command/Command.php:326
+/var/www/html/vendor/laravel/framework/src/Illuminate/Console/Command.php:180
+/var/www/html/vendor/symfony/console/Application.php:1078
+/var/www/html/vendor/symfony/console/Application.php:324
+/var/www/html/vendor/symfony/console/Application.php:175
+/var/www/html/vendor/laravel/framework/src/Illuminate/Console/Application.php:162
+/var/www/html/vendor/laravel/framework/src/Illuminate/Foundation/Console/Kernel.php:400
+/var/www/html/vendor/laravel/framework/src/Illuminate/Testing/PendingCommand.php:297
+/var/www/html/vendor/laravel/framework/src/Illuminate/Testing/PendingCommand.php:484
+/var/www/html/vendor/laravel/framework/src/Illuminate/Foundation/Testing/Concerns/InteractsWithConsole.php:80
+/var/www/html/vendor/laravel/framework/src/Illuminate/Foundation/Testing/RefreshDatabase.php:73
+/var/www/html/vendor/laravel/framework/src/Illuminate/Foundation/Testing/RefreshDatabase.php:23
+/var/www/html/vendor/laravel/framework/src/Illuminate/Foundation/Testing/Concerns/InteractsWithTestCaseLifecycle.php:183
+/var/www/html/vendor/laravel/framework/src/Illuminate/Foundation/Testing/Concerns/InteractsWithTestCaseLifecycle.php:84
+/var/www/html/vendor/laravel/framework/src/Illuminate/Foundation/Testing/TestCase.php:40</error>
+        </testcase>
+      </testsuite>
+      <testsuite name="Tests\Feature\Auth\EmailVerificationTest" file="/var/www/html/tests/Feature/Auth/EmailVerificationTest.php" tests="3" assertions="0" errors="3" failures="0" skipped="0" time="0.000000">
+        <testcase name="test_email_verification_screen_can_be_rendered" file="/var/www/html/tests/Feature/Auth/EmailVerificationTest.php" line="17" class="Tests\Feature\Auth\EmailVerificationTest" classname="Tests.Feature.Auth.EmailVerificationTest" assertions="0" time="0.000000">
+          <error type="Illuminate\Database\QueryException">Tests\Feature\Auth\EmailVerificationTest::test_email_verification_screen_can_be_rendered
+Illuminate\Database\QueryException: SQLSTATE[HY000] [2002] php_network_getaddresses: getaddrinfo for mysql failed: Try again (Connection: mysql, SQL: select table_name as `name`, (data_length + index_length) as `size`, table_comment as `comment`, engine as `engine`, table_collation as `collation` from information_schema.tables where table_schema = 'ictepmms' and table_type in ('BASE TABLE', 'SYSTEM VERSIONED') order by table_name)
+
+/var/www/html/vendor/laravel/framework/src/Illuminate/Database/Connection.php:829
+/var/www/html/vendor/laravel/framework/src/Illuminate/Database/Connection.php:983
+/var/www/html/vendor/laravel/framework/src/Illuminate/Database/Connection.php:962
+/var/www/html/vendor/laravel/framework/src/Illuminate/Database/Connection.php:785
+/var/www/html/vendor/laravel/framework/src/Illuminate/Database/Connection.php:414
+/var/www/html/vendor/laravel/framework/src/Illuminate/Database/Connection.php:401
+/var/www/html/vendor/laravel/framework/src/Illuminate/Database/Schema/MySqlBuilder.php:41
+/var/www/html/vendor/laravel/framework/src/Illuminate/Database/Schema/MySqlBuilder.php:147
+/var/www/html/vendor/laravel/framework/src/Illuminate/Database/Console/WipeCommand.php:71
+/var/www/html/vendor/laravel/framework/src/Illuminate/Database/Console/WipeCommand.php:48
+/var/www/html/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php:36
+/var/www/html/vendor/laravel/framework/src/Illuminate/Container/Util.php:41
+/var/www/html/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php:93
+/var/www/html/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php:35
+/var/www/html/vendor/laravel/framework/src/Illuminate/Container/Container.php:662
+/var/www/html/vendor/laravel/framework/src/Illuminate/Console/Command.php:211
+/var/www/html/vendor/symfony/console/Command/Command.php:326
+/var/www/html/vendor/laravel/framework/src/Illuminate/Console/Command.php:180
+/var/www/html/vendor/laravel/framework/src/Illuminate/Console/Concerns/CallsCommands.php:67
+/var/www/html/vendor/laravel/framework/src/Illuminate/Console/Concerns/CallsCommands.php:40
+/var/www/html/vendor/laravel/framework/src/Illuminate/Database/Console/Migrations/FreshCommand.php:44
+/var/www/html/vendor/laravel/framework/src/Illuminate/Console/View/Components/Task.php:37
+/var/www/html/vendor/laravel/framework/src/Illuminate/Console/View/Components/Factory.php:58
+/var/www/html/vendor/laravel/framework/src/Illuminate/Database/Console/Migrations/FreshCommand.php:44
+/var/www/html/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php:36
+/var/www/html/vendor/laravel/framework/src/Illuminate/Container/Util.php:41
+/var/www/html/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php:93
+/var/www/html/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php:35
+/var/www/html/vendor/laravel/framework/src/Illuminate/Container/Container.php:662
+/var/www/html/vendor/laravel/framework/src/Illuminate/Console/Command.php:211
+/var/www/html/vendor/symfony/console/Command/Command.php:326
+/var/www/html/vendor/laravel/framework/src/Illuminate/Console/Command.php:180
+/var/www/html/vendor/symfony/console/Application.php:1078
+/var/www/html/vendor/symfony/console/Application.php:324
+/var/www/html/vendor/symfony/console/Application.php:175
+/var/www/html/vendor/laravel/framework/src/Illuminate/Console/Application.php:162
+/var/www/html/vendor/laravel/framework/src/Illuminate/Foundation/Console/Kernel.php:400
+/var/www/html/vendor/laravel/framework/src/Illuminate/Testing/PendingCommand.php:297
+/var/www/html/vendor/laravel/framework/src/Illuminate/Testing/PendingCommand.php:484
+/var/www/html/vendor/laravel/framework/src/Illuminate/Foundation/Testing/Concerns/InteractsWithConsole.php:80
+/var/www/html/vendor/laravel/framework/src/Illuminate/Foundation/Testing/RefreshDatabase.php:73
+/var/www/html/vendor/laravel/framework/src/Illuminate/Foundation/Testing/RefreshDatabase.php:23
+/var/www/html/vendor/laravel/framework/src/Illuminate/Foundation/Testing/Concerns/InteractsWithTestCaseLifecycle.php:183
+/var/www/html/vendor/laravel/framework/src/Illuminate/Foundation/Testing/Concerns/InteractsWithTestCaseLifecycle.php:84
+/var/www/html/vendor/laravel/framework/src/Illuminate/Foundation/Testing/TestCase.php:40</error>
+        </testcase>
+        <testcase name="test_email_can_be_verified" file="/var/www/html/tests/Feature/Auth/EmailVerificationTest.php" line="28" class="Tests\Feature\Auth\EmailVerificationTest" classname="Tests.Feature.Auth.EmailVerificationTest" assertions="0" time="0.000000">
+          <error type="Illuminate\Database\QueryException">Tests\Feature\Auth\EmailVerificationTest::test_email_can_be_verified
+Illuminate\Database\QueryException: SQLSTATE[HY000] [2002] php_network_getaddresses: getaddrinfo for mysql failed: Try again (Connection: mysql, SQL: select table_name as `name`, (data_length + index_length) as `size`, table_comment as `comment`, engine as `engine`, table_collation as `collation` from information_schema.tables where table_schema = 'ictepmms' and table_type in ('BASE TABLE', 'SYSTEM VERSIONED') order by table_name)
+
+/var/www/html/vendor/laravel/framework/src/Illuminate/Database/Connection.php:829
+/var/www/html/vendor/laravel/framework/src/Illuminate/Database/Connection.php:983
+/var/www/html/vendor/laravel/framework/src/Illuminate/Database/Connection.php:962
+/var/www/html/vendor/laravel/framework/src/Illuminate/Database/Connection.php:785
+/var/www/html/vendor/laravel/framework/src/Illuminate/Database/Connection.php:414
+/var/www/html/vendor/laravel/framework/src/Illuminate/Database/Connection.php:401
+/var/www/html/vendor/laravel/framework/src/Illuminate/Database/Schema/MySqlBuilder.php:41
+/var/www/html/vendor/laravel/framework/src/Illuminate/Database/Schema/MySqlBuilder.php:147
+/var/www/html/vendor/laravel/framework/src/Illuminate/Database/Console/WipeCommand.php:71
+/var/www/html/vendor/laravel/framework/src/Illuminate/Database/Console/WipeCommand.php:48
+/var/www/html/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php:36
+/var/www/html/vendor/laravel/framework/src/Illuminate/Container/Util.php:41
+/var/www/html/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php:93
+/var/www/html/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php:35
+/var/www/html/vendor/laravel/framework/src/Illuminate/Container/Container.php:662
+/var/www/html/vendor/laravel/framework/src/Illuminate/Console/Command.php:211
+/var/www/html/vendor/symfony/console/Command/Command.php:326
+/var/www/html/vendor/laravel/framework/src/Illuminate/Console/Command.php:180
+/var/www/html/vendor/laravel/framework/src/Illuminate/Console/Concerns/CallsCommands.php:67
+/var/www/html/vendor/laravel/framework/src/Illuminate/Console/Concerns/CallsCommands.php:40
+/var/www/html/vendor/laravel/framework/src/Illuminate/Database/Console/Migrations/FreshCommand.php:44
+/var/www/html/vendor/laravel/framework/src/Illuminate/Console/View/Components/Task.php:37
+/var/www/html/vendor/laravel/framework/src/Illuminate/Console/View/Components/Factory.php:58
+/var/www/html/vendor/laravel/framework/src/Illuminate/Database/Console/Migrations/FreshCommand.php:44
+/var/www/html/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php:36
+/var/www/html/vendor/laravel/framework/src/Illuminate/Container/Util.php:41
+/var/www/html/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php:93
+/var/www/html/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php:35
+/var/www/html/vendor/laravel/framework/src/Illuminate/Container/Container.php:662
+/var/www/html/vendor/laravel/framework/src/Illuminate/Console/Command.php:211
+/var/www/html/vendor/symfony/console/Command/Command.php:326
+/var/www/html/vendor/laravel/framework/src/Illuminate/Console/Command.php:180
+/var/www/html/vendor/symfony/console/Application.php:1078
+/var/www/html/vendor/symfony/console/Application.php:324
+/var/www/html/vendor/symfony/console/Application.php:175
+/var/www/html/vendor/laravel/framework/src/Illuminate/Console/Application.php:162
+/var/www/html/vendor/laravel/framework/src/Illuminate/Foundation/Console/Kernel.php:400
+/var/www/html/vendor/laravel/framework/src/Illuminate/Testing/PendingCommand.php:297
+/var/www/html/vendor/laravel/framework/src/Illuminate/Testing/PendingCommand.php:484
+/var/www/html/vendor/laravel/framework/src/Illuminate/Foundation/Testing/Concerns/InteractsWithConsole.php:80
+/var/www/html/vendor/laravel/framework/src/Illuminate/Foundation/Testing/RefreshDatabase.php:73
+/var/www/html/vendor/laravel/framework/src/Illuminate/Foundation/Testing/RefreshDatabase.php:23
+/var/www/html/vendor/laravel/framework/src/Illuminate/Foundation/Testing/Concerns/InteractsWithTestCaseLifecycle.php:183
+/var/www/html/vendor/laravel/framework/src/Illuminate/Foundation/Testing/Concerns/InteractsWithTestCaseLifecycle.php:84
+/var/www/html/vendor/laravel/framework/src/Illuminate/Foundation/Testing/TestCase.php:40</error>
+        </testcase>
+        <testcase name="test_email_is_not_verified_with_invalid_hash" file="/var/www/html/tests/Feature/Auth/EmailVerificationTest.php" line="49" class="Tests\Feature\Auth\EmailVerificationTest" classname="Tests.Feature.Auth.EmailVerificationTest" assertions="0" time="0.000000">
+          <error type="Illuminate\Database\QueryException">Tests\Feature\Auth\EmailVerificationTest::test_email_is_not_verified_with_invalid_hash
+Illuminate\Database\QueryException: SQLSTATE[HY000] [2002] php_network_getaddresses: getaddrinfo for mysql failed: Try again (Connection: mysql, SQL: select table_name as `name`, (data_length + index_length) as `size`, table_comment as `comment`, engine as `engine`, table_collation as `collation` from information_schema.tables where table_schema = 'ictepmms' and table_type in ('BASE TABLE', 'SYSTEM VERSIONED') order by table_name)
+
+/var/www/html/vendor/laravel/framework/src/Illuminate/Database/Connection.php:829
+/var/www/html/vendor/laravel/framework/src/Illuminate/Database/Connection.php:983
+/var/www/html/vendor/laravel/framework/src/Illuminate/Database/Connection.php:962
+/var/www/html/vendor/laravel/framework/src/Illuminate/Database/Connection.php:785
+/var/www/html/vendor/laravel/framework/src/Illuminate/Database/Connection.php:414
+/var/www/html/vendor/laravel/framework/src/Illuminate/Database/Connection.php:401
+/var/www/html/vendor/laravel/framework/src/Illuminate/Database/Schema/MySqlBuilder.php:41
+/var/www/html/vendor/laravel/framework/src/Illuminate/Database/Schema/MySqlBuilder.php:147
+/var/www/html/vendor/laravel/framework/src/Illuminate/Database/Console/WipeCommand.php:71
+/var/www/html/vendor/laravel/framework/src/Illuminate/Database/Console/WipeCommand.php:48
+/var/www/html/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php:36
+/var/www/html/vendor/laravel/framework/src/Illuminate/Container/Util.php:41
+/var/www/html/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php:93
+/var/www/html/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php:35
+/var/www/html/vendor/laravel/framework/src/Illuminate/Container/Container.php:662
+/var/www/html/vendor/laravel/framework/src/Illuminate/Console/Command.php:211
+/var/www/html/vendor/symfony/console/Command/Command.php:326
+/var/www/html/vendor/laravel/framework/src/Illuminate/Console/Command.php:180
+/var/www/html/vendor/laravel/framework/src/Illuminate/Console/Concerns/CallsCommands.php:67
+/var/www/html/vendor/laravel/framework/src/Illuminate/Console/Concerns/CallsCommands.php:40
+/var/www/html/vendor/laravel/framework/src/Illuminate/Database/Console/Migrations/FreshCommand.php:44
+/var/www/html/vendor/laravel/framework/src/Illuminate/Console/View/Components/Task.php:37
+/var/www/html/vendor/laravel/framework/src/Illuminate/Console/View/Components/Factory.php:58
+/var/www/html/vendor/laravel/framework/src/Illuminate/Database/Console/Migrations/FreshCommand.php:44
+/var/www/html/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php:36
+/var/www/html/vendor/laravel/framework/src/Illuminate/Container/Util.php:41
+/var/www/html/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php:93
+/var/www/html/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php:35
+/var/www/html/vendor/laravel/framework/src/Illuminate/Container/Container.php:662
+/var/www/html/vendor/laravel/framework/src/Illuminate/Console/Command.php:211
+/var/www/html/vendor/symfony/console/Command/Command.php:326
+/var/www/html/vendor/laravel/framework/src/Illuminate/Console/Command.php:180
+/var/www/html/vendor/symfony/console/Application.php:1078
+/var/www/html/vendor/symfony/console/Application.php:324
+/var/www/html/vendor/symfony/console/Application.php:175
+/var/www/html/vendor/laravel/framework/src/Illuminate/Console/Application.php:162
+/var/www/html/vendor/laravel/framework/src/Illuminate/Foundation/Console/Kernel.php:400
+/var/www/html/vendor/laravel/framework/src/Illuminate/Testing/PendingCommand.php:297
+/var/www/html/vendor/laravel/framework/src/Illuminate/Testing/PendingCommand.php:484
+/var/www/html/vendor/laravel/framework/src/Illuminate/Foundation/Testing/Concerns/InteractsWithConsole.php:80
+/var/www/html/vendor/laravel/framework/src/Illuminate/Foundation/Testing/RefreshDatabase.php:73
+/var/www/html/vendor/laravel/framework/src/Illuminate/Foundation/Testing/RefreshDatabase.php:23
+/var/www/html/vendor/laravel/framework/src/Illuminate/Foundation/Testing/Concerns/InteractsWithTestCaseLifecycle.php:183
+/var/www/html/vendor/laravel/framework/src/Illuminate/Foundation/Testing/Concerns/InteractsWithTestCaseLifecycle.php:84
+/var/www/html/vendor/laravel/framework/src/Illuminate/Foundation/Testing/TestCase.php:40</error>
+        </testcase>
+      </testsuite>
+      <testsuite name="Tests\Feature\Auth\PasswordConfirmationTest" file="/var/www/html/tests/Feature/Auth/PasswordConfirmationTest.php" tests="3" assertions="0" errors="3" failures="0" skipped="0" time="0.000000">
+        <testcase name="test_confirm_password_screen_can_be_rendered" file="/var/www/html/tests/Feature/Auth/PasswordConfirmationTest.php" line="13" class="Tests\Feature\Auth\PasswordConfirmationTest" classname="Tests.Feature.Auth.PasswordConfirmationTest" assertions="0" time="0.000000">
+          <error type="Illuminate\Database\QueryException">Tests\Feature\Auth\PasswordConfirmationTest::test_confirm_password_screen_can_be_rendered
+Illuminate\Database\QueryException: SQLSTATE[HY000] [2002] php_network_getaddresses: getaddrinfo for mysql failed: Try again (Connection: mysql, SQL: select table_name as `name`, (data_length + index_length) as `size`, table_comment as `comment`, engine as `engine`, table_collation as `collation` from information_schema.tables where table_schema = 'ictepmms' and table_type in ('BASE TABLE', 'SYSTEM VERSIONED') order by table_name)
+
+/var/www/html/vendor/laravel/framework/src/Illuminate/Database/Connection.php:829
+/var/www/html/vendor/laravel/framework/src/Illuminate/Database/Connection.php:983
+/var/www/html/vendor/laravel/framework/src/Illuminate/Database/Connection.php:962
+/var/www/html/vendor/laravel/framework/src/Illuminate/Database/Connection.php:785
+/var/www/html/vendor/laravel/framework/src/Illuminate/Database/Connection.php:414
+/var/www/html/vendor/laravel/framework/src/Illuminate/Database/Connection.php:401
+/var/www/html/vendor/laravel/framework/src/Illuminate/Database/Schema/MySqlBuilder.php:41
+/var/www/html/vendor/laravel/framework/src/Illuminate/Database/Schema/MySqlBuilder.php:147
+/var/www/html/vendor/laravel/framework/src/Illuminate/Database/Console/WipeCommand.php:71
+/var/www/html/vendor/laravel/framework/src/Illuminate/Database/Console/WipeCommand.php:48
+/var/www/html/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php:36
+/var/www/html/vendor/laravel/framework/src/Illuminate/Container/Util.php:41
+/var/www/html/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php:93
+/var/www/html/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php:35
+/var/www/html/vendor/laravel/framework/src/Illuminate/Container/Container.php:662
+/var/www/html/vendor/laravel/framework/src/Illuminate/Console/Command.php:211
+/var/www/html/vendor/symfony/console/Command/Command.php:326
+/var/www/html/vendor/laravel/framework/src/Illuminate/Console/Command.php:180
+/var/www/html/vendor/laravel/framework/src/Illuminate/Console/Concerns/CallsCommands.php:67
+/var/www/html/vendor/laravel/framework/src/Illuminate/Console/Concerns/CallsCommands.php:40
+/var/www/html/vendor/laravel/framework/src/Illuminate/Database/Console/Migrations/FreshCommand.php:44
+/var/www/html/vendor/laravel/framework/src/Illuminate/Console/View/Components/Task.php:37
+/var/www/html/vendor/laravel/framework/src/Illuminate/Console/View/Components/Factory.php:58
+/var/www/html/vendor/laravel/framework/src/Illuminate/Database/Console/Migrations/FreshCommand.php:44
+/var/www/html/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php:36
+/var/www/html/vendor/laravel/framework/src/Illuminate/Container/Util.php:41
+/var/www/html/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php:93
+/var/www/html/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php:35
+/var/www/html/vendor/laravel/framework/src/Illuminate/Container/Container.php:662
+/var/www/html/vendor/laravel/framework/src/Illuminate/Console/Command.php:211
+/var/www/html/vendor/symfony/console/Command/Command.php:326
+/var/www/html/vendor/laravel/framework/src/Illuminate/Console/Command.php:180
+/var/www/html/vendor/symfony/console/Application.php:1078
+/var/www/html/vendor/symfony/console/Application.php:324
+/var/www/html/vendor/symfony/console/Application.php:175
+/var/www/html/vendor/laravel/framework/src/Illuminate/Console/Application.php:162
+/var/www/html/vendor/laravel/framework/src/Illuminate/Foundation/Console/Kernel.php:400
+/var/www/html/vendor/laravel/framework/src/Illuminate/Testing/PendingCommand.php:297
+/var/www/html/vendor/laravel/framework/src/Illuminate/Testing/PendingCommand.php:484
+/var/www/html/vendor/laravel/framework/src/Illuminate/Foundation/Testing/Concerns/InteractsWithConsole.php:80
+/var/www/html/vendor/laravel/framework/src/Illuminate/Foundation/Testing/RefreshDatabase.php:73
+/var/www/html/vendor/laravel/framework/src/Illuminate/Foundation/Testing/RefreshDatabase.php:23
+/var/www/html/vendor/laravel/framework/src/Illuminate/Foundation/Testing/Concerns/InteractsWithTestCaseLifecycle.php:183
+/var/www/html/vendor/laravel/framework/src/Illuminate/Foundation/Testing/Concerns/InteractsWithTestCaseLifecycle.php:84
+/var/www/html/vendor/laravel/framework/src/Illuminate/Foundation/Testing/TestCase.php:40</error>
+        </testcase>
+        <testcase name="test_password_can_be_confirmed" file="/var/www/html/tests/Feature/Auth/PasswordConfirmationTest.php" line="22" class="Tests\Feature\Auth\PasswordConfirmationTest" classname="Tests.Feature.Auth.PasswordConfirmationTest" assertions="0" time="0.000000">
+          <error type="Illuminate\Database\QueryException">Tests\Feature\Auth\PasswordConfirmationTest::test_password_can_be_confirmed
+Illuminate\Database\QueryException: SQLSTATE[HY000] [2002] php_network_getaddresses: getaddrinfo for mysql failed: Try again (Connection: mysql, SQL: select table_name as `name`, (data_length + index_length) as `size`, table_comment as `comment`, engine as `engine`, table_collation as `collation` from information_schema.tables where table_schema = 'ictepmms' and table_type in ('BASE TABLE', 'SYSTEM VERSIONED') order by table_name)
+
+/var/www/html/vendor/laravel/framework/src/Illuminate/Database/Connection.php:829
+/var/www/html/vendor/laravel/framework/src/Illuminate/Database/Connection.php:983
+/var/www/html/vendor/laravel/framework/src/Illuminate/Database/Connection.php:962
+/var/www/html/vendor/laravel/framework/src/Illuminate/Database/Connection.php:785
+/var/www/html/vendor/laravel/framework/src/Illuminate/Database/Connection.php:414
+/var/www/html/vendor/laravel/framework/src/Illuminate/Database/Connection.php:401
+/var/www/html/vendor/laravel/framework/src/Illuminate/Database/Schema/MySqlBuilder.php:41
+/var/www/html/vendor/laravel/framework/src/Illuminate/Database/Schema/MySqlBuilder.php:147
+/var/www/html/vendor/laravel/framework/src/Illuminate/Database/Console/WipeCommand.php:71
+/var/www/html/vendor/laravel/framework/src/Illuminate/Database/Console/WipeCommand.php:48
+/var/www/html/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php:36
+/var/www/html/vendor/laravel/framework/src/Illuminate/Container/Util.php:41
+/var/www/html/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php:93
+/var/www/html/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php:35
+/var/www/html/vendor/laravel/framework/src/Illuminate/Container/Container.php:662
+/var/www/html/vendor/laravel/framework/src/Illuminate/Console/Command.php:211
+/var/www/html/vendor/symfony/console/Command/Command.php:326
+/var/www/html/vendor/laravel/framework/src/Illuminate/Console/Command.php:180
+/var/www/html/vendor/laravel/framework/src/Illuminate/Console/Concerns/CallsCommands.php:67
+/var/www/html/vendor/laravel/framework/src/Illuminate/Console/Concerns/CallsCommands.php:40
+/var/www/html/vendor/laravel/framework/src/Illuminate/Database/Console/Migrations/FreshCommand.php:44
+/var/www/html/vendor/laravel/framework/src/Illuminate/Console/View/Components/Task.php:37
+/var/www/html/vendor/laravel/framework/src/Illuminate/Console/View/Components/Factory.php:58
+/var/www/html/vendor/laravel/framework/src/Illuminate/Database/Console/Migrations/FreshCommand.php:44
+/var/www/html/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php:36
+/var/www/html/vendor/laravel/framework/src/Illuminate/Container/Util.php:41
+/var/www/html/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php:93
+/var/www/html/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php:35
+/var/www/html/vendor/laravel/framework/src/Illuminate/Container/Container.php:662
+/var/www/html/vendor/laravel/framework/src/Illuminate/Console/Command.php:211
+/var/www/html/vendor/symfony/console/Command/Command.php:326
+/var/www/html/vendor/laravel/framework/src/Illuminate/Console/Command.php:180
+/var/www/html/vendor/symfony/console/Application.php:1078
+/var/www/html/vendor/symfony/console/Application.php:324
+/var/www/html/vendor/symfony/console/Application.php:175
+/var/www/html/vendor/laravel/framework/src/Illuminate/Console/Application.php:162
+/var/www/html/vendor/laravel/framework/src/Illuminate/Foundation/Console/Kernel.php:400
+/var/www/html/vendor/laravel/framework/src/Illuminate/Testing/PendingCommand.php:297
+/var/www/html/vendor/laravel/framework/src/Illuminate/Testing/PendingCommand.php:484
+/var/www/html/vendor/laravel/framework/src/Illuminate/Foundation/Testing/Concerns/InteractsWithConsole.php:80
+/var/www/html/vendor/laravel/framework/src/Illuminate/Foundation/Testing/RefreshDatabase.php:73
+/var/www/html/vendor/laravel/framework/src/Illuminate/Foundation/Testing/RefreshDatabase.php:23
+/var/www/html/vendor/laravel/framework/src/Illuminate/Foundation/Testing/Concerns/InteractsWithTestCaseLifecycle.php:183
+/var/www/html/vendor/laravel/framework/src/Illuminate/Foundation/Testing/Concerns/InteractsWithTestCaseLifecycle.php:84
+/var/www/html/vendor/laravel/framework/src/Illuminate/Foundation/Testing/TestCase.php:40</error>
+        </testcase>
+        <testcase name="test_password_is_not_confirmed_with_invalid_password" file="/var/www/html/tests/Feature/Auth/PasswordConfirmationTest.php" line="34" class="Tests\Feature\Auth\PasswordConfirmationTest" classname="Tests.Feature.Auth.PasswordConfirmationTest" assertions="0" time="0.000000">
+          <error type="Illuminate\Database\QueryException">Tests\Feature\Auth\PasswordConfirmationTest::test_password_is_not_confirmed_with_invalid_password
+Illuminate\Database\QueryException: SQLSTATE[HY000] [2002] php_network_getaddresses: getaddrinfo for mysql failed: Try again (Connection: mysql, SQL: select table_name as `name`, (data_length + index_length) as `size`, table_comment as `comment`, engine as `engine`, table_collation as `collation` from information_schema.tables where table_schema = 'ictepmms' and table_type in ('BASE TABLE', 'SYSTEM VERSIONED') order by table_name)
+
+/var/www/html/vendor/laravel/framework/src/Illuminate/Database/Connection.php:829
+/var/www/html/vendor/laravel/framework/src/Illuminate/Database/Connection.php:983
+/var/www/html/vendor/laravel/framework/src/Illuminate/Database/Connection.php:962
+/var/www/html/vendor/laravel/framework/src/Illuminate/Database/Connection.php:785
+/var/www/html/vendor/laravel/framework/src/Illuminate/Database/Connection.php:414
+/var/www/html/vendor/laravel/framework/src/Illuminate/Database/Connection.php:401
+/var/www/html/vendor/laravel/framework/src/Illuminate/Database/Schema/MySqlBuilder.php:41
+/var/www/html/vendor/laravel/framework/src/Illuminate/Database/Schema/MySqlBuilder.php:147
+/var/www/html/vendor/laravel/framework/src/Illuminate/Database/Console/WipeCommand.php:71
+/var/www/html/vendor/laravel/framework/src/Illuminate/Database/Console/WipeCommand.php:48
+/var/www/html/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php:36
+/var/www/html/vendor/laravel/framework/src/Illuminate/Container/Util.php:41
+/var/www/html/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php:93
+/var/www/html/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php:35
+/var/www/html/vendor/laravel/framework/src/Illuminate/Container/Container.php:662
+/var/www/html/vendor/laravel/framework/src/Illuminate/Console/Command.php:211
+/var/www/html/vendor/symfony/console/Command/Command.php:326
+/var/www/html/vendor/laravel/framework/src/Illuminate/Console/Command.php:180
+/var/www/html/vendor/laravel/framework/src/Illuminate/Console/Concerns/CallsCommands.php:67
+/var/www/html/vendor/laravel/framework/src/Illuminate/Console/Concerns/CallsCommands.php:40
+/var/www/html/vendor/laravel/framework/src/Illuminate/Database/Console/Migrations/FreshCommand.php:44
+/var/www/html/vendor/laravel/framework/src/Illuminate/Console/View/Components/Task.php:37
+/var/www/html/vendor/laravel/framework/src/Illuminate/Console/View/Components/Factory.php:58
+/var/www/html/vendor/laravel/framework/src/Illuminate/Database/Console/Migrations/FreshCommand.php:44
+/var/www/html/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php:36
+/var/www/html/vendor/laravel/framework/src/Illuminate/Container/Util.php:41
+/var/www/html/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php:93
+/var/www/html/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php:35
+/var/www/html/vendor/laravel/framework/src/Illuminate/Container/Container.php:662
+/var/www/html/vendor/laravel/framework/src/Illuminate/Console/Command.php:211
+/var/www/html/vendor/symfony/console/Command/Command.php:326
+/var/www/html/vendor/laravel/framework/src/Illuminate/Console/Command.php:180
+/var/www/html/vendor/symfony/console/Application.php:1078
+/var/www/html/vendor/symfony/console/Application.php:324
+/var/www/html/vendor/symfony/console/Application.php:175
+/var/www/html/vendor/laravel/framework/src/Illuminate/Console/Application.php:162
+/var/www/html/vendor/laravel/framework/src/Illuminate/Foundation/Console/Kernel.php:400
+/var/www/html/vendor/laravel/framework/src/Illuminate/Testing/PendingCommand.php:297
+/var/www/html/vendor/laravel/framework/src/Illuminate/Testing/PendingCommand.php:484
+/var/www/html/vendor/laravel/framework/src/Illuminate/Foundation/Testing/Concerns/InteractsWithConsole.php:80
+/var/www/html/vendor/laravel/framework/src/Illuminate/Foundation/Testing/RefreshDatabase.php:73
+/var/www/html/vendor/laravel/framework/src/Illuminate/Foundation/Testing/RefreshDatabase.php:23
+/var/www/html/vendor/laravel/framework/src/Illuminate/Foundation/Testing/Concerns/InteractsWithTestCaseLifecycle.php:183
+/var/www/html/vendor/laravel/framework/src/Illuminate/Foundation/Testing/Concerns/InteractsWithTestCaseLifecycle.php:84
+/var/www/html/vendor/laravel/framework/src/Illuminate/Foundation/Testing/TestCase.php:40</error>
+        </testcase>
+      </testsuite>
+      <testsuite name="Tests\Feature\Auth\PasswordResetTest" file="/var/www/html/tests/Feature/Auth/PasswordResetTest.php" tests="4" assertions="0" errors="4" failures="0" skipped="0" time="0.000000">
+        <testcase name="test_reset_password_link_screen_can_be_rendered" file="/var/www/html/tests/Feature/Auth/PasswordResetTest.php" line="15" class="Tests\Feature\Auth\PasswordResetTest" classname="Tests.Feature.Auth.PasswordResetTest" assertions="0" time="0.000000">
+          <error type="Illuminate\Database\QueryException">Tests\Feature\Auth\PasswordResetTest::test_reset_password_link_screen_can_be_rendered
+Illuminate\Database\QueryException: SQLSTATE[HY000] [2002] php_network_getaddresses: getaddrinfo for mysql failed: Try again (Connection: mysql, SQL: select table_name as `name`, (data_length + index_length) as `size`, table_comment as `comment`, engine as `engine`, table_collation as `collation` from information_schema.tables where table_schema = 'ictepmms' and table_type in ('BASE TABLE', 'SYSTEM VERSIONED') order by table_name)
+
+/var/www/html/vendor/laravel/framework/src/Illuminate/Database/Connection.php:829
+/var/www/html/vendor/laravel/framework/src/Illuminate/Database/Connection.php:983
+/var/www/html/vendor/laravel/framework/src/Illuminate/Database/Connection.php:962
+/var/www/html/vendor/laravel/framework/src/Illuminate/Database/Connection.php:785
+/var/www/html/vendor/laravel/framework/src/Illuminate/Database/Connection.php:414
+/var/www/html/vendor/laravel/framework/src/Illuminate/Database/Connection.php:401
+/var/www/html/vendor/laravel/framework/src/Illuminate/Database/Schema/MySqlBuilder.php:41
+/var/www/html/vendor/laravel/framework/src/Illuminate/Database/Schema/MySqlBuilder.php:147
+/var/www/html/vendor/laravel/framework/src/Illuminate/Database/Console/WipeCommand.php:71
+/var/www/html/vendor/laravel/framework/src/Illuminate/Database/Console/WipeCommand.php:48
+/var/www/html/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php:36
+/var/www/html/vendor/laravel/framework/src/Illuminate/Container/Util.php:41
+/var/www/html/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php:93
+/var/www/html/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php:35
+/var/www/html/vendor/laravel/framework/src/Illuminate/Container/Container.php:662
+/var/www/html/vendor/laravel/framework/src/Illuminate/Console/Command.php:211
+/var/www/html/vendor/symfony/console/Command/Command.php:326
+/var/www/html/vendor/laravel/framework/src/Illuminate/Console/Command.php:180
+/var/www/html/vendor/laravel/framework/src/Illuminate/Console/Concerns/CallsCommands.php:67
+/var/www/html/vendor/laravel/framework/src/Illuminate/Console/Concerns/CallsCommands.php:40
+/var/www/html/vendor/laravel/framework/src/Illuminate/Database/Console/Migrations/FreshCommand.php:44
+/var/www/html/vendor/laravel/framework/src/Illuminate/Console/View/Components/Task.php:37
+/var/www/html/vendor/laravel/framework/src/Illuminate/Console/View/Components/Factory.php:58
+/var/www/html/vendor/laravel/framework/src/Illuminate/Database/Console/Migrations/FreshCommand.php:44
+/var/www/html/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php:36
+/var/www/html/vendor/laravel/framework/src/Illuminate/Container/Util.php:41
+/var/www/html/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php:93
+/var/www/html/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php:35
+/var/www/html/vendor/laravel/framework/src/Illuminate/Container/Container.php:662
+/var/www/html/vendor/laravel/framework/src/Illuminate/Console/Command.php:211
+/var/www/html/vendor/symfony/console/Command/Command.php:326
+/var/www/html/vendor/laravel/framework/src/Illuminate/Console/Command.php:180
+/var/www/html/vendor/symfony/console/Application.php:1078
+/var/www/html/vendor/symfony/console/Application.php:324
+/var/www/html/vendor/symfony/console/Application.php:175
+/var/www/html/vendor/laravel/framework/src/Illuminate/Console/Application.php:162
+/var/www/html/vendor/laravel/framework/src/Illuminate/Foundation/Console/Kernel.php:400
+/var/www/html/vendor/laravel/framework/src/Illuminate/Testing/PendingCommand.php:297
+/var/www/html/vendor/laravel/framework/src/Illuminate/Testing/PendingCommand.php:484
+/var/www/html/vendor/laravel/framework/src/Illuminate/Foundation/Testing/Concerns/InteractsWithConsole.php:80
+/var/www/html/vendor/laravel/framework/src/Illuminate/Foundation/Testing/RefreshDatabase.php:73
+/var/www/html/vendor/laravel/framework/src/Illuminate/Foundation/Testing/RefreshDatabase.php:23
+/var/www/html/vendor/laravel/framework/src/Illuminate/Foundation/Testing/Concerns/InteractsWithTestCaseLifecycle.php:183
+/var/www/html/vendor/laravel/framework/src/Illuminate/Foundation/Testing/Concerns/InteractsWithTestCaseLifecycle.php:84
+/var/www/html/vendor/laravel/framework/src/Illuminate/Foundation/Testing/TestCase.php:40</error>
+        </testcase>
+        <testcase name="test_reset_password_link_can_be_requested" file="/var/www/html/tests/Feature/Auth/PasswordResetTest.php" line="22" class="Tests\Feature\Auth\PasswordResetTest" classname="Tests.Feature.Auth.PasswordResetTest" assertions="0" time="0.000000">
+          <error type="Illuminate\Database\QueryException">Tests\Feature\Auth\PasswordResetTest::test_reset_password_link_can_be_requested
+Illuminate\Database\QueryException: SQLSTATE[HY000] [2002] php_network_getaddresses: getaddrinfo for mysql failed: Try again (Connection: mysql, SQL: select table_name as `name`, (data_length + index_length) as `size`, table_comment as `comment`, engine as `engine`, table_collation as `collation` from information_schema.tables where table_schema = 'ictepmms' and table_type in ('BASE TABLE', 'SYSTEM VERSIONED') order by table_name)
+
+/var/www/html/vendor/laravel/framework/src/Illuminate/Database/Connection.php:829
+/var/www/html/vendor/laravel/framework/src/Illuminate/Database/Connection.php:983
+/var/www/html/vendor/laravel/framework/src/Illuminate/Database/Connection.php:962
+/var/www/html/vendor/laravel/framework/src/Illuminate/Database/Connection.php:785
+/var/www/html/vendor/laravel/framework/src/Illuminate/Database/Connection.php:414
+/var/www/html/vendor/laravel/framework/src/Illuminate/Database/Connection.php:401
+/var/www/html/vendor/laravel/framework/src/Illuminate/Database/Schema/MySqlBuilder.php:41
+/var/www/html/vendor/laravel/framework/src/Illuminate/Database/Schema/MySqlBuilder.php:147
+/var/www/html/vendor/laravel/framework/src/Illuminate/Database/Console/WipeCommand.php:71
+/var/www/html/vendor/laravel/framework/src/Illuminate/Database/Console/WipeCommand.php:48
+/var/www/html/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php:36
+/var/www/html/vendor/laravel/framework/src/Illuminate/Container/Util.php:41
+/var/www/html/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php:93
+/var/www/html/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php:35
+/var/www/html/vendor/laravel/framework/src/Illuminate/Container/Container.php:662
+/var/www/html/vendor/laravel/framework/src/Illuminate/Console/Command.php:211
+/var/www/html/vendor/symfony/console/Command/Command.php:326
+/var/www/html/vendor/laravel/framework/src/Illuminate/Console/Command.php:180
+/var/www/html/vendor/laravel/framework/src/Illuminate/Console/Concerns/CallsCommands.php:67
+/var/www/html/vendor/laravel/framework/src/Illuminate/Console/Concerns/CallsCommands.php:40
+/var/www/html/vendor/laravel/framework/src/Illuminate/Database/Console/Migrations/FreshCommand.php:44
+/var/www/html/vendor/laravel/framework/src/Illuminate/Console/View/Components/Task.php:37
+/var/www/html/vendor/laravel/framework/src/Illuminate/Console/View/Components/Factory.php:58
+/var/www/html/vendor/laravel/framework/src/Illuminate/Database/Console/Migrations/FreshCommand.php:44
+/var/www/html/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php:36
+/var/www/html/vendor/laravel/framework/src/Illuminate/Container/Util.php:41
+/var/www/html/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php:93
+/var/www/html/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php:35
+/var/www/html/vendor/laravel/framework/src/Illuminate/Container/Container.php:662
+/var/www/html/vendor/laravel/framework/src/Illuminate/Console/Command.php:211
+/var/www/html/vendor/symfony/console/Command/Command.php:326
+/var/www/html/vendor/laravel/framework/src/Illuminate/Console/Command.php:180
+/var/www/html/vendor/symfony/console/Application.php:1078
+/var/www/html/vendor/symfony/console/Application.php:324
+/var/www/html/vendor/symfony/console/Application.php:175
+/var/www/html/vendor/laravel/framework/src/Illuminate/Console/Application.php:162
+/var/www/html/vendor/laravel/framework/src/Illuminate/Foundation/Console/Kernel.php:400
+/var/www/html/vendor/laravel/framework/src/Illuminate/Testing/PendingCommand.php:297
+/var/www/html/vendor/laravel/framework/src/Illuminate/Testing/PendingCommand.php:484
+/var/www/html/vendor/laravel/framework/src/Illuminate/Foundation/Testing/Concerns/InteractsWithConsole.php:80
+/var/www/html/vendor/laravel/framework/src/Illuminate/Foundation/Testing/RefreshDatabase.php:73
+/var/www/html/vendor/laravel/framework/src/Illuminate/Foundation/Testing/RefreshDatabase.php:23
+/var/www/html/vendor/laravel/framework/src/Illuminate/Foundation/Testing/Concerns/InteractsWithTestCaseLifecycle.php:183
+/var/www/html/vendor/laravel/framework/src/Illuminate/Foundation/Testing/Concerns/InteractsWithTestCaseLifecycle.php:84
+/var/www/html/vendor/laravel/framework/src/Illuminate/Foundation/Testing/TestCase.php:40</error>
+        </testcase>
+        <testcase name="test_reset_password_screen_can_be_rendered" file="/var/www/html/tests/Feature/Auth/PasswordResetTest.php" line="33" class="Tests\Feature\Auth\PasswordResetTest" classname="Tests.Feature.Auth.PasswordResetTest" assertions="0" time="0.000000">
+          <error type="Illuminate\Database\QueryException">Tests\Feature\Auth\PasswordResetTest::test_reset_password_screen_can_be_rendered
+Illuminate\Database\QueryException: SQLSTATE[HY000] [2002] php_network_getaddresses: getaddrinfo for mysql failed: Try again (Connection: mysql, SQL: select table_name as `name`, (data_length + index_length) as `size`, table_comment as `comment`, engine as `engine`, table_collation as `collation` from information_schema.tables where table_schema = 'ictepmms' and table_type in ('BASE TABLE', 'SYSTEM VERSIONED') order by table_name)
+
+/var/www/html/vendor/laravel/framework/src/Illuminate/Database/Connection.php:829
+/var/www/html/vendor/laravel/framework/src/Illuminate/Database/Connection.php:983
+/var/www/html/vendor/laravel/framework/src/Illuminate/Database/Connection.php:962
+/var/www/html/vendor/laravel/framework/src/Illuminate/Database/Connection.php:785
+/var/www/html/vendor/laravel/framework/src/Illuminate/Database/Connection.php:414
+/var/www/html/vendor/laravel/framework/src/Illuminate/Database/Connection.php:401
+/var/www/html/vendor/laravel/framework/src/Illuminate/Database/Schema/MySqlBuilder.php:41
+/var/www/html/vendor/laravel/framework/src/Illuminate/Database/Schema/MySqlBuilder.php:147
+/var/www/html/vendor/laravel/framework/src/Illuminate/Database/Console/WipeCommand.php:71
+/var/www/html/vendor/laravel/framework/src/Illuminate/Database/Console/WipeCommand.php:48
+/var/www/html/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php:36
+/var/www/html/vendor/laravel/framework/src/Illuminate/Container/Util.php:41
+/var/www/html/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php:93
+/var/www/html/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php:35
+/var/www/html/vendor/laravel/framework/src/Illuminate/Container/Container.php:662
+/var/www/html/vendor/laravel/framework/src/Illuminate/Console/Command.php:211
+/var/www/html/vendor/symfony/console/Command/Command.php:326
+/var/www/html/vendor/laravel/framework/src/Illuminate/Console/Command.php:180
+/var/www/html/vendor/laravel/framework/src/Illuminate/Console/Concerns/CallsCommands.php:67
+/var/www/html/vendor/laravel/framework/src/Illuminate/Console/Concerns/CallsCommands.php:40
+/var/www/html/vendor/laravel/framework/src/Illuminate/Database/Console/Migrations/FreshCommand.php:44
+/var/www/html/vendor/laravel/framework/src/Illuminate/Console/View/Components/Task.php:37
+/var/www/html/vendor/laravel/framework/src/Illuminate/Console/View/Components/Factory.php:58
+/var/www/html/vendor/laravel/framework/src/Illuminate/Database/Console/Migrations/FreshCommand.php:44
+/var/www/html/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php:36
+/var/www/html/vendor/laravel/framework/src/Illuminate/Container/Util.php:41
+/var/www/html/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php:93
+/var/www/html/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php:35
+/var/www/html/vendor/laravel/framework/src/Illuminate/Container/Container.php:662
+/var/www/html/vendor/laravel/framework/src/Illuminate/Console/Command.php:211
+/var/www/html/vendor/symfony/console/Command/Command.php:326
+/var/www/html/vendor/laravel/framework/src/Illuminate/Console/Command.php:180
+/var/www/html/vendor/symfony/console/Application.php:1078
+/var/www/html/vendor/symfony/console/Application.php:324
+/var/www/html/vendor/symfony/console/Application.php:175
+/var/www/html/vendor/laravel/framework/src/Illuminate/Console/Application.php:162
+/var/www/html/vendor/laravel/framework/src/Illuminate/Foundation/Console/Kernel.php:400
+/var/www/html/vendor/laravel/framework/src/Illuminate/Testing/PendingCommand.php:297
+/var/www/html/vendor/laravel/framework/src/Illuminate/Testing/PendingCommand.php:484
+/var/www/html/vendor/laravel/framework/src/Illuminate/Foundation/Testing/Concerns/InteractsWithConsole.php:80
+/var/www/html/vendor/laravel/framework/src/Illuminate/Foundation/Testing/RefreshDatabase.php:73
+/var/www/html/vendor/laravel/framework/src/Illuminate/Foundation/Testing/RefreshDatabase.php:23
+/var/www/html/vendor/laravel/framework/src/Illuminate/Foundation/Testing/Concerns/InteractsWithTestCaseLifecycle.php:183
+/var/www/html/vendor/laravel/framework/src/Illuminate/Foundation/Testing/Concerns/InteractsWithTestCaseLifecycle.php:84
+/var/www/html/vendor/laravel/framework/src/Illuminate/Foundation/Testing/TestCase.php:40</error>
+        </testcase>
+        <testcase name="test_password_can_be_reset_with_valid_token" file="/var/www/html/tests/Feature/Auth/PasswordResetTest.php" line="50" class="Tests\Feature\Auth\PasswordResetTest" classname="Tests.Feature.Auth.PasswordResetTest" assertions="0" time="0.000000">
+          <error type="Illuminate\Database\QueryException">Tests\Feature\Auth\PasswordResetTest::test_password_can_be_reset_with_valid_token
+Illuminate\Database\QueryException: SQLSTATE[HY000] [2002] php_network_getaddresses: getaddrinfo for mysql failed: Try again (Connection: mysql, SQL: select table_name as `name`, (data_length + index_length) as `size`, table_comment as `comment`, engine as `engine`, table_collation as `collation` from information_schema.tables where table_schema = 'ictepmms' and table_type in ('BASE TABLE', 'SYSTEM VERSIONED') order by table_name)
+
+/var/www/html/vendor/laravel/framework/src/Illuminate/Database/Connection.php:829
+/var/www/html/vendor/laravel/framework/src/Illuminate/Database/Connection.php:983
+/var/www/html/vendor/laravel/framework/src/Illuminate/Database/Connection.php:962
+/var/www/html/vendor/laravel/framework/src/Illuminate/Database/Connection.php:785
+/var/www/html/vendor/laravel/framework/src/Illuminate/Database/Connection.php:414
+/var/www/html/vendor/laravel/framework/src/Illuminate/Database/Connection.php:401
+/var/www/html/vendor/laravel/framework/src/Illuminate/Database/Schema/MySqlBuilder.php:41
+/var/www/html/vendor/laravel/framework/src/Illuminate/Database/Schema/MySqlBuilder.php:147
+/var/www/html/vendor/laravel/framework/src/Illuminate/Database/Console/WipeCommand.php:71
+/var/www/html/vendor/laravel/framework/src/Illuminate/Database/Console/WipeCommand.php:48
+/var/www/html/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php:36
+/var/www/html/vendor/laravel/framework/src/Illuminate/Container/Util.php:41
+/var/www/html/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php:93
+/var/www/html/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php:35
+/var/www/html/vendor/laravel/framework/src/Illuminate/Container/Container.php:662
+/var/www/html/vendor/laravel/framework/src/Illuminate/Console/Command.php:211
+/var/www/html/vendor/symfony/console/Command/Command.php:326
+/var/www/html/vendor/laravel/framework/src/Illuminate/Console/Command.php:180
+/var/www/html/vendor/laravel/framework/src/Illuminate/Console/Concerns/CallsCommands.php:67
+/var/www/html/vendor/laravel/framework/src/Illuminate/Console/Concerns/CallsCommands.php:40
+/var/www/html/vendor/laravel/framework/src/Illuminate/Database/Console/Migrations/FreshCommand.php:44
+/var/www/html/vendor/laravel/framework/src/Illuminate/Console/View/Components/Task.php:37
+/var/www/html/vendor/laravel/framework/src/Illuminate/Console/View/Components/Factory.php:58
+/var/www/html/vendor/laravel/framework/src/Illuminate/Database/Console/Migrations/FreshCommand.php:44
+/var/www/html/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php:36
+/var/www/html/vendor/laravel/framework/src/Illuminate/Container/Util.php:41
+/var/www/html/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php:93
+/var/www/html/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php:35
+/var/www/html/vendor/laravel/framework/src/Illuminate/Container/Container.php:662
+/var/www/html/vendor/laravel/framework/src/Illuminate/Console/Command.php:211
+/var/www/html/vendor/symfony/console/Command/Command.php:326
+/var/www/html/vendor/laravel/framework/src/Illuminate/Console/Command.php:180
+/var/www/html/vendor/symfony/console/Application.php:1078
+/var/www/html/vendor/symfony/console/Application.php:324
+/var/www/html/vendor/symfony/console/Application.php:175
+/var/www/html/vendor/laravel/framework/src/Illuminate/Console/Application.php:162
+/var/www/html/vendor/laravel/framework/src/Illuminate/Foundation/Console/Kernel.php:400
+/var/www/html/vendor/laravel/framework/src/Illuminate/Testing/PendingCommand.php:297
+/var/www/html/vendor/laravel/framework/src/Illuminate/Testing/PendingCommand.php:484
+/var/www/html/vendor/laravel/framework/src/Illuminate/Foundation/Testing/Concerns/InteractsWithConsole.php:80
+/var/www/html/vendor/laravel/framework/src/Illuminate/Foundation/Testing/RefreshDatabase.php:73
+/var/www/html/vendor/laravel/framework/src/Illuminate/Foundation/Testing/RefreshDatabase.php:23
+/var/www/html/vendor/laravel/framework/src/Illuminate/Foundation/Testing/Concerns/InteractsWithTestCaseLifecycle.php:183
+/var/www/html/vendor/laravel/framework/src/Illuminate/Foundation/Testing/Concerns/InteractsWithTestCaseLifecycle.php:84
+/var/www/html/vendor/laravel/framework/src/Illuminate/Foundation/Testing/TestCase.php:40</error>
+        </testcase>
+      </testsuite>
+      <testsuite name="Tests\Feature\Auth\PasswordUpdateTest" file="/var/www/html/tests/Feature/Auth/PasswordUpdateTest.php" tests="2" assertions="0" errors="2" failures="0" skipped="0" time="0.000000">
+        <testcase name="test_password_can_be_updated" file="/var/www/html/tests/Feature/Auth/PasswordUpdateTest.php" line="14" class="Tests\Feature\Auth\PasswordUpdateTest" classname="Tests.Feature.Auth.PasswordUpdateTest" assertions="0" time="0.000000">
+          <error type="Illuminate\Database\QueryException">Tests\Feature\Auth\PasswordUpdateTest::test_password_can_be_updated
+Illuminate\Database\QueryException: SQLSTATE[HY000] [2002] php_network_getaddresses: getaddrinfo for mysql failed: Try again (Connection: mysql, SQL: select table_name as `name`, (data_length + index_length) as `size`, table_comment as `comment`, engine as `engine`, table_collation as `collation` from information_schema.tables where table_schema = 'ictepmms' and table_type in ('BASE TABLE', 'SYSTEM VERSIONED') order by table_name)
+
+/var/www/html/vendor/laravel/framework/src/Illuminate/Database/Connection.php:829
+/var/www/html/vendor/laravel/framework/src/Illuminate/Database/Connection.php:983
+/var/www/html/vendor/laravel/framework/src/Illuminate/Database/Connection.php:962
+/var/www/html/vendor/laravel/framework/src/Illuminate/Database/Connection.php:785
+/var/www/html/vendor/laravel/framework/src/Illuminate/Database/Connection.php:414
+/var/www/html/vendor/laravel/framework/src/Illuminate/Database/Connection.php:401
+/var/www/html/vendor/laravel/framework/src/Illuminate/Database/Schema/MySqlBuilder.php:41
+/var/www/html/vendor/laravel/framework/src/Illuminate/Database/Schema/MySqlBuilder.php:147
+/var/www/html/vendor/laravel/framework/src/Illuminate/Database/Console/WipeCommand.php:71
+/var/www/html/vendor/laravel/framework/src/Illuminate/Database/Console/WipeCommand.php:48
+/var/www/html/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php:36
+/var/www/html/vendor/laravel/framework/src/Illuminate/Container/Util.php:41
+/var/www/html/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php:93
+/var/www/html/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php:35
+/var/www/html/vendor/laravel/framework/src/Illuminate/Container/Container.php:662
+/var/www/html/vendor/laravel/framework/src/Illuminate/Console/Command.php:211
+/var/www/html/vendor/symfony/console/Command/Command.php:326
+/var/www/html/vendor/laravel/framework/src/Illuminate/Console/Command.php:180
+/var/www/html/vendor/laravel/framework/src/Illuminate/Console/Concerns/CallsCommands.php:67
+/var/www/html/vendor/laravel/framework/src/Illuminate/Console/Concerns/CallsCommands.php:40
+/var/www/html/vendor/laravel/framework/src/Illuminate/Database/Console/Migrations/FreshCommand.php:44
+/var/www/html/vendor/laravel/framework/src/Illuminate/Console/View/Components/Task.php:37
+/var/www/html/vendor/laravel/framework/src/Illuminate/Console/View/Components/Factory.php:58
+/var/www/html/vendor/laravel/framework/src/Illuminate/Database/Console/Migrations/FreshCommand.php:44
+/var/www/html/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php:36
+/var/www/html/vendor/laravel/framework/src/Illuminate/Container/Util.php:41
+/var/www/html/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php:93
+/var/www/html/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php:35
+/var/www/html/vendor/laravel/framework/src/Illuminate/Container/Container.php:662
+/var/www/html/vendor/laravel/framework/src/Illuminate/Console/Command.php:211
+/var/www/html/vendor/symfony/console/Command/Command.php:326
+/var/www/html/vendor/laravel/framework/src/Illuminate/Console/Command.php:180
+/var/www/html/vendor/symfony/console/Application.php:1078
+/var/www/html/vendor/symfony/console/Application.php:324
+/var/www/html/vendor/symfony/console/Application.php:175
+/var/www/html/vendor/laravel/framework/src/Illuminate/Console/Application.php:162
+/var/www/html/vendor/laravel/framework/src/Illuminate/Foundation/Console/Kernel.php:400
+/var/www/html/vendor/laravel/framework/src/Illuminate/Testing/PendingCommand.php:297
+/var/www/html/vendor/laravel/framework/src/Illuminate/Testing/PendingCommand.php:484
+/var/www/html/vendor/laravel/framework/src/Illuminate/Foundation/Testing/Concerns/InteractsWithConsole.php:80
+/var/www/html/vendor/laravel/framework/src/Illuminate/Foundation/Testing/RefreshDatabase.php:73
+/var/www/html/vendor/laravel/framework/src/Illuminate/Foundation/Testing/RefreshDatabase.php:23
+/var/www/html/vendor/laravel/framework/src/Illuminate/Foundation/Testing/Concerns/InteractsWithTestCaseLifecycle.php:183
+/var/www/html/vendor/laravel/framework/src/Illuminate/Foundation/Testing/Concerns/InteractsWithTestCaseLifecycle.php:84
+/var/www/html/vendor/laravel/framework/src/Illuminate/Foundation/Testing/TestCase.php:40</error>
+        </testcase>
+        <testcase name="test_correct_password_must_be_provided_to_update_password" file="/var/www/html/tests/Feature/Auth/PasswordUpdateTest.php" line="34" class="Tests\Feature\Auth\PasswordUpdateTest" classname="Tests.Feature.Auth.PasswordUpdateTest" assertions="0" time="0.000000">
+          <error type="Illuminate\Database\QueryException">Tests\Feature\Auth\PasswordUpdateTest::test_correct_password_must_be_provided_to_update_password
+Illuminate\Database\QueryException: SQLSTATE[HY000] [2002] php_network_getaddresses: getaddrinfo for mysql failed: Try again (Connection: mysql, SQL: select table_name as `name`, (data_length + index_length) as `size`, table_comment as `comment`, engine as `engine`, table_collation as `collation` from information_schema.tables where table_schema = 'ictepmms' and table_type in ('BASE TABLE', 'SYSTEM VERSIONED') order by table_name)
+
+/var/www/html/vendor/laravel/framework/src/Illuminate/Database/Connection.php:829
+/var/www/html/vendor/laravel/framework/src/Illuminate/Database/Connection.php:983
+/var/www/html/vendor/laravel/framework/src/Illuminate/Database/Connection.php:962
+/var/www/html/vendor/laravel/framework/src/Illuminate/Database/Connection.php:785
+/var/www/html/vendor/laravel/framework/src/Illuminate/Database/Connection.php:414
+/var/www/html/vendor/laravel/framework/src/Illuminate/Database/Connection.php:401
+/var/www/html/vendor/laravel/framework/src/Illuminate/Database/Schema/MySqlBuilder.php:41
+/var/www/html/vendor/laravel/framework/src/Illuminate/Database/Schema/MySqlBuilder.php:147
+/var/www/html/vendor/laravel/framework/src/Illuminate/Database/Console/WipeCommand.php:71
+/var/www/html/vendor/laravel/framework/src/Illuminate/Database/Console/WipeCommand.php:48
+/var/www/html/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php:36
+/var/www/html/vendor/laravel/framework/src/Illuminate/Container/Util.php:41
+/var/www/html/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php:93
+/var/www/html/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php:35
+/var/www/html/vendor/laravel/framework/src/Illuminate/Container/Container.php:662
+/var/www/html/vendor/laravel/framework/src/Illuminate/Console/Command.php:211
+/var/www/html/vendor/symfony/console/Command/Command.php:326
+/var/www/html/vendor/laravel/framework/src/Illuminate/Console/Command.php:180
+/var/www/html/vendor/laravel/framework/src/Illuminate/Console/Concerns/CallsCommands.php:67
+/var/www/html/vendor/laravel/framework/src/Illuminate/Console/Concerns/CallsCommands.php:40
+/var/www/html/vendor/laravel/framework/src/Illuminate/Database/Console/Migrations/FreshCommand.php:44
+/var/www/html/vendor/laravel/framework/src/Illuminate/Console/View/Components/Task.php:37
+/var/www/html/vendor/laravel/framework/src/Illuminate/Console/View/Components/Factory.php:58
+/var/www/html/vendor/laravel/framework/src/Illuminate/Database/Console/Migrations/FreshCommand.php:44
+/var/www/html/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php:36
+/var/www/html/vendor/laravel/framework/src/Illuminate/Container/Util.php:41
+/var/www/html/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php:93
+/var/www/html/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php:35
+/var/www/html/vendor/laravel/framework/src/Illuminate/Container/Container.php:662
+/var/www/html/vendor/laravel/framework/src/Illuminate/Console/Command.php:211
+/var/www/html/vendor/symfony/console/Command/Command.php:326
+/var/www/html/vendor/laravel/framework/src/Illuminate/Console/Command.php:180
+/var/www/html/vendor/symfony/console/Application.php:1078
+/var/www/html/vendor/symfony/console/Application.php:324
+/var/www/html/vendor/symfony/console/Application.php:175
+/var/www/html/vendor/laravel/framework/src/Illuminate/Console/Application.php:162
+/var/www/html/vendor/laravel/framework/src/Illuminate/Foundation/Console/Kernel.php:400
+/var/www/html/vendor/laravel/framework/src/Illuminate/Testing/PendingCommand.php:297
+/var/www/html/vendor/laravel/framework/src/Illuminate/Testing/PendingCommand.php:484
+/var/www/html/vendor/laravel/framework/src/Illuminate/Foundation/Testing/Concerns/InteractsWithConsole.php:80
+/var/www/html/vendor/laravel/framework/src/Illuminate/Foundation/Testing/RefreshDatabase.php:73
+/var/www/html/vendor/laravel/framework/src/Illuminate/Foundation/Testing/RefreshDatabase.php:23
+/var/www/html/vendor/laravel/framework/src/Illuminate/Foundation/Testing/Concerns/InteractsWithTestCaseLifecycle.php:183
+/var/www/html/vendor/laravel/framework/src/Illuminate/Foundation/Testing/Concerns/InteractsWithTestCaseLifecycle.php:84
+/var/www/html/vendor/laravel/framework/src/Illuminate/Foundation/Testing/TestCase.php:40</error>
+        </testcase>
+      </testsuite>
+      <testsuite name="Tests\Feature\Auth\RegistrationTest" file="/var/www/html/tests/Feature/Auth/RegistrationTest.php" tests="2" assertions="0" errors="2" failures="0" skipped="0" time="0.000000">
+        <testcase name="test_registration_screen_can_be_rendered" file="/var/www/html/tests/Feature/Auth/RegistrationTest.php" line="13" class="Tests\Feature\Auth\RegistrationTest" classname="Tests.Feature.Auth.RegistrationTest" assertions="0" time="0.000000">
+          <error type="Illuminate\Database\QueryException">Tests\Feature\Auth\RegistrationTest::test_registration_screen_can_be_rendered
+Illuminate\Database\QueryException: SQLSTATE[HY000] [2002] php_network_getaddresses: getaddrinfo for mysql failed: Try again (Connection: mysql, SQL: select table_name as `name`, (data_length + index_length) as `size`, table_comment as `comment`, engine as `engine`, table_collation as `collation` from information_schema.tables where table_schema = 'ictepmms' and table_type in ('BASE TABLE', 'SYSTEM VERSIONED') order by table_name)
+
+/var/www/html/vendor/laravel/framework/src/Illuminate/Database/Connection.php:829
+/var/www/html/vendor/laravel/framework/src/Illuminate/Database/Connection.php:983
+/var/www/html/vendor/laravel/framework/src/Illuminate/Database/Connection.php:962
+/var/www/html/vendor/laravel/framework/src/Illuminate/Database/Connection.php:785
+/var/www/html/vendor/laravel/framework/src/Illuminate/Database/Connection.php:414
+/var/www/html/vendor/laravel/framework/src/Illuminate/Database/Connection.php:401
+/var/www/html/vendor/laravel/framework/src/Illuminate/Database/Schema/MySqlBuilder.php:41
+/var/www/html/vendor/laravel/framework/src/Illuminate/Database/Schema/MySqlBuilder.php:147
+/var/www/html/vendor/laravel/framework/src/Illuminate/Database/Console/WipeCommand.php:71
+/var/www/html/vendor/laravel/framework/src/Illuminate/Database/Console/WipeCommand.php:48
+/var/www/html/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php:36
+/var/www/html/vendor/laravel/framework/src/Illuminate/Container/Util.php:41
+/var/www/html/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php:93
+/var/www/html/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php:35
+/var/www/html/vendor/laravel/framework/src/Illuminate/Container/Container.php:662
+/var/www/html/vendor/laravel/framework/src/Illuminate/Console/Command.php:211
+/var/www/html/vendor/symfony/console/Command/Command.php:326
+/var/www/html/vendor/laravel/framework/src/Illuminate/Console/Command.php:180
+/var/www/html/vendor/laravel/framework/src/Illuminate/Console/Concerns/CallsCommands.php:67
+/var/www/html/vendor/laravel/framework/src/Illuminate/Console/Concerns/CallsCommands.php:40
+/var/www/html/vendor/laravel/framework/src/Illuminate/Database/Console/Migrations/FreshCommand.php:44
+/var/www/html/vendor/laravel/framework/src/Illuminate/Console/View/Components/Task.php:37
+/var/www/html/vendor/laravel/framework/src/Illuminate/Console/View/Components/Factory.php:58
+/var/www/html/vendor/laravel/framework/src/Illuminate/Database/Console/Migrations/FreshCommand.php:44
+/var/www/html/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php:36
+/var/www/html/vendor/laravel/framework/src/Illuminate/Container/Util.php:41
+/var/www/html/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php:93
+/var/www/html/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php:35
+/var/www/html/vendor/laravel/framework/src/Illuminate/Container/Container.php:662
+/var/www/html/vendor/laravel/framework/src/Illuminate/Console/Command.php:211
+/var/www/html/vendor/symfony/console/Command/Command.php:326
+/var/www/html/vendor/laravel/framework/src/Illuminate/Console/Command.php:180
+/var/www/html/vendor/symfony/console/Application.php:1078
+/var/www/html/vendor/symfony/console/Application.php:324
+/var/www/html/vendor/symfony/console/Application.php:175
+/var/www/html/vendor/laravel/framework/src/Illuminate/Console/Application.php:162
+/var/www/html/vendor/laravel/framework/src/Illuminate/Foundation/Console/Kernel.php:400
+/var/www/html/vendor/laravel/framework/src/Illuminate/Testing/PendingCommand.php:297
+/var/www/html/vendor/laravel/framework/src/Illuminate/Testing/PendingCommand.php:484
+/var/www/html/vendor/laravel/framework/src/Illuminate/Foundation/Testing/Concerns/InteractsWithConsole.php:80
+/var/www/html/vendor/laravel/framework/src/Illuminate/Foundation/Testing/RefreshDatabase.php:73
+/var/www/html/vendor/laravel/framework/src/Illuminate/Foundation/Testing/RefreshDatabase.php:23
+/var/www/html/vendor/laravel/framework/src/Illuminate/Foundation/Testing/Concerns/InteractsWithTestCaseLifecycle.php:183
+/var/www/html/vendor/laravel/framework/src/Illuminate/Foundation/Testing/Concerns/InteractsWithTestCaseLifecycle.php:84
+/var/www/html/vendor/laravel/framework/src/Illuminate/Foundation/Testing/TestCase.php:40</error>
+        </testcase>
+        <testcase name="test_new_users_can_register" file="/var/www/html/tests/Feature/Auth/RegistrationTest.php" line="20" class="Tests\Feature\Auth\RegistrationTest" classname="Tests.Feature.Auth.RegistrationTest" assertions="0" time="0.000000">
+          <error type="Illuminate\Database\QueryException">Tests\Feature\Auth\RegistrationTest::test_new_users_can_register
+Illuminate\Database\QueryException: SQLSTATE[HY000] [2002] php_network_getaddresses: getaddrinfo for mysql failed: Try again (Connection: mysql, SQL: select table_name as `name`, (data_length + index_length) as `size`, table_comment as `comment`, engine as `engine`, table_collation as `collation` from information_schema.tables where table_schema = 'ictepmms' and table_type in ('BASE TABLE', 'SYSTEM VERSIONED') order by table_name)
+
+/var/www/html/vendor/laravel/framework/src/Illuminate/Database/Connection.php:829
+/var/www/html/vendor/laravel/framework/src/Illuminate/Database/Connection.php:983
+/var/www/html/vendor/laravel/framework/src/Illuminate/Database/Connection.php:962
+/var/www/html/vendor/laravel/framework/src/Illuminate/Database/Connection.php:785
+/var/www/html/vendor/laravel/framework/src/Illuminate/Database/Connection.php:414
+/var/www/html/vendor/laravel/framework/src/Illuminate/Database/Connection.php:401
+/var/www/html/vendor/laravel/framework/src/Illuminate/Database/Schema/MySqlBuilder.php:41
+/var/www/html/vendor/laravel/framework/src/Illuminate/Database/Schema/MySqlBuilder.php:147
+/var/www/html/vendor/laravel/framework/src/Illuminate/Database/Console/WipeCommand.php:71
+/var/www/html/vendor/laravel/framework/src/Illuminate/Database/Console/WipeCommand.php:48
+/var/www/html/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php:36
+/var/www/html/vendor/laravel/framework/src/Illuminate/Container/Util.php:41
+/var/www/html/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php:93
+/var/www/html/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php:35
+/var/www/html/vendor/laravel/framework/src/Illuminate/Container/Container.php:662
+/var/www/html/vendor/laravel/framework/src/Illuminate/Console/Command.php:211
+/var/www/html/vendor/symfony/console/Command/Command.php:326
+/var/www/html/vendor/laravel/framework/src/Illuminate/Console/Command.php:180
+/var/www/html/vendor/laravel/framework/src/Illuminate/Console/Concerns/CallsCommands.php:67
+/var/www/html/vendor/laravel/framework/src/Illuminate/Console/Concerns/CallsCommands.php:40
+/var/www/html/vendor/laravel/framework/src/Illuminate/Database/Console/Migrations/FreshCommand.php:44
+/var/www/html/vendor/laravel/framework/src/Illuminate/Console/View/Components/Task.php:37
+/var/www/html/vendor/laravel/framework/src/Illuminate/Console/View/Components/Factory.php:58
+/var/www/html/vendor/laravel/framework/src/Illuminate/Database/Console/Migrations/FreshCommand.php:44
+/var/www/html/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php:36
+/var/www/html/vendor/laravel/framework/src/Illuminate/Container/Util.php:41
+/var/www/html/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php:93
+/var/www/html/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php:35
+/var/www/html/vendor/laravel/framework/src/Illuminate/Container/Container.php:662
+/var/www/html/vendor/laravel/framework/src/Illuminate/Console/Command.php:211
+/var/www/html/vendor/symfony/console/Command/Command.php:326
+/var/www/html/vendor/laravel/framework/src/Illuminate/Console/Command.php:180
+/var/www/html/vendor/symfony/console/Application.php:1078
+/var/www/html/vendor/symfony/console/Application.php:324
+/var/www/html/vendor/symfony/console/Application.php:175
+/var/www/html/vendor/laravel/framework/src/Illuminate/Console/Application.php:162
+/var/www/html/vendor/laravel/framework/src/Illuminate/Foundation/Console/Kernel.php:400
+/var/www/html/vendor/laravel/framework/src/Illuminate/Testing/PendingCommand.php:297
+/var/www/html/vendor/laravel/framework/src/Illuminate/Testing/PendingCommand.php:484
+/var/www/html/vendor/laravel/framework/src/Illuminate/Foundation/Testing/Concerns/InteractsWithConsole.php:80
+/var/www/html/vendor/laravel/framework/src/Illuminate/Foundation/Testing/RefreshDatabase.php:73
+/var/www/html/vendor/laravel/framework/src/Illuminate/Foundation/Testing/RefreshDatabase.php:23
+/var/www/html/vendor/laravel/framework/src/Illuminate/Foundation/Testing/Concerns/InteractsWithTestCaseLifecycle.php:183
+/var/www/html/vendor/laravel/framework/src/Illuminate/Foundation/Testing/Concerns/InteractsWithTestCaseLifecycle.php:84
+/var/www/html/vendor/laravel/framework/src/Illuminate/Foundation/Testing/TestCase.php:40</error>
+        </testcase>
+      </testsuite>
+      <testsuite name="Tests\Feature\ExampleTest" file="/var/www/html/tests/Feature/ExampleTest.php" tests="1" assertions="1" errors="0" failures="0" skipped="0" time="0.047731">
+        <testcase name="test_the_application_returns_a_successful_response" file="/var/www/html/tests/Feature/ExampleTest.php" line="13" class="Tests\Feature\ExampleTest" classname="Tests.Feature.ExampleTest" assertions="1" time="0.047731"/>
+      </testsuite>
+      <testsuite name="Tests\Feature\ProfileTest" file="/var/www/html/tests/Feature/ProfileTest.php" tests="5" assertions="0" errors="5" failures="0" skipped="0" time="0.000000">
+        <testcase name="test_profile_page_is_displayed" file="/var/www/html/tests/Feature/ProfileTest.php" line="13" class="Tests\Feature\ProfileTest" classname="Tests.Feature.ProfileTest" assertions="0" time="0.000000">
+          <error type="Illuminate\Database\QueryException">Tests\Feature\ProfileTest::test_profile_page_is_displayed
+Illuminate\Database\QueryException: SQLSTATE[HY000] [2002] php_network_getaddresses: getaddrinfo for mysql failed: Try again (Connection: mysql, SQL: select table_name as `name`, (data_length + index_length) as `size`, table_comment as `comment`, engine as `engine`, table_collation as `collation` from information_schema.tables where table_schema = 'ictepmms' and table_type in ('BASE TABLE', 'SYSTEM VERSIONED') order by table_name)
+
+/var/www/html/vendor/laravel/framework/src/Illuminate/Database/Connection.php:829
+/var/www/html/vendor/laravel/framework/src/Illuminate/Database/Connection.php:983
+/var/www/html/vendor/laravel/framework/src/Illuminate/Database/Connection.php:962
+/var/www/html/vendor/laravel/framework/src/Illuminate/Database/Connection.php:785
+/var/www/html/vendor/laravel/framework/src/Illuminate/Database/Connection.php:414
+/var/www/html/vendor/laravel/framework/src/Illuminate/Database/Connection.php:401
+/var/www/html/vendor/laravel/framework/src/Illuminate/Database/Schema/MySqlBuilder.php:41
+/var/www/html/vendor/laravel/framework/src/Illuminate/Database/Schema/MySqlBuilder.php:147
+/var/www/html/vendor/laravel/framework/src/Illuminate/Database/Console/WipeCommand.php:71
+/var/www/html/vendor/laravel/framework/src/Illuminate/Database/Console/WipeCommand.php:48
+/var/www/html/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php:36
+/var/www/html/vendor/laravel/framework/src/Illuminate/Container/Util.php:41
+/var/www/html/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php:93
+/var/www/html/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php:35
+/var/www/html/vendor/laravel/framework/src/Illuminate/Container/Container.php:662
+/var/www/html/vendor/laravel/framework/src/Illuminate/Console/Command.php:211
+/var/www/html/vendor/symfony/console/Command/Command.php:326
+/var/www/html/vendor/laravel/framework/src/Illuminate/Console/Command.php:180
+/var/www/html/vendor/laravel/framework/src/Illuminate/Console/Concerns/CallsCommands.php:67
+/var/www/html/vendor/laravel/framework/src/Illuminate/Console/Concerns/CallsCommands.php:40
+/var/www/html/vendor/laravel/framework/src/Illuminate/Database/Console/Migrations/FreshCommand.php:44
+/var/www/html/vendor/laravel/framework/src/Illuminate/Console/View/Components/Task.php:37
+/var/www/html/vendor/laravel/framework/src/Illuminate/Console/View/Components/Factory.php:58
+/var/www/html/vendor/laravel/framework/src/Illuminate/Database/Console/Migrations/FreshCommand.php:44
+/var/www/html/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php:36
+/var/www/html/vendor/laravel/framework/src/Illuminate/Container/Util.php:41
+/var/www/html/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php:93
+/var/www/html/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php:35
+/var/www/html/vendor/laravel/framework/src/Illuminate/Container/Container.php:662
+/var/www/html/vendor/laravel/framework/src/Illuminate/Console/Command.php:211
+/var/www/html/vendor/symfony/console/Command/Command.php:326
+/var/www/html/vendor/laravel/framework/src/Illuminate/Console/Command.php:180
+/var/www/html/vendor/symfony/console/Application.php:1078
+/var/www/html/vendor/symfony/console/Application.php:324
+/var/www/html/vendor/symfony/console/Application.php:175
+/var/www/html/vendor/laravel/framework/src/Illuminate/Console/Application.php:162
+/var/www/html/vendor/laravel/framework/src/Illuminate/Foundation/Console/Kernel.php:400
+/var/www/html/vendor/laravel/framework/src/Illuminate/Testing/PendingCommand.php:297
+/var/www/html/vendor/laravel/framework/src/Illuminate/Testing/PendingCommand.php:484
+/var/www/html/vendor/laravel/framework/src/Illuminate/Foundation/Testing/Concerns/InteractsWithConsole.php:80
+/var/www/html/vendor/laravel/framework/src/Illuminate/Foundation/Testing/RefreshDatabase.php:73
+/var/www/html/vendor/laravel/framework/src/Illuminate/Foundation/Testing/RefreshDatabase.php:23
+/var/www/html/vendor/laravel/framework/src/Illuminate/Foundation/Testing/Concerns/InteractsWithTestCaseLifecycle.php:183
+/var/www/html/vendor/laravel/framework/src/Illuminate/Foundation/Testing/Concerns/InteractsWithTestCaseLifecycle.php:84
+/var/www/html/vendor/laravel/framework/src/Illuminate/Foundation/Testing/TestCase.php:40</error>
+        </testcase>
+        <testcase name="test_profile_information_can_be_updated" file="/var/www/html/tests/Feature/ProfileTest.php" line="24" class="Tests\Feature\ProfileTest" classname="Tests.Feature.ProfileTest" assertions="0" time="0.000000">
+          <error type="Illuminate\Database\QueryException">Tests\Feature\ProfileTest::test_profile_information_can_be_updated
+Illuminate\Database\QueryException: SQLSTATE[HY000] [2002] php_network_getaddresses: getaddrinfo for mysql failed: Try again (Connection: mysql, SQL: select table_name as `name`, (data_length + index_length) as `size`, table_comment as `comment`, engine as `engine`, table_collation as `collation` from information_schema.tables where table_schema = 'ictepmms' and table_type in ('BASE TABLE', 'SYSTEM VERSIONED') order by table_name)
+
+/var/www/html/vendor/laravel/framework/src/Illuminate/Database/Connection.php:829
+/var/www/html/vendor/laravel/framework/src/Illuminate/Database/Connection.php:983
+/var/www/html/vendor/laravel/framework/src/Illuminate/Database/Connection.php:962
+/var/www/html/vendor/laravel/framework/src/Illuminate/Database/Connection.php:785
+/var/www/html/vendor/laravel/framework/src/Illuminate/Database/Connection.php:414
+/var/www/html/vendor/laravel/framework/src/Illuminate/Database/Connection.php:401
+/var/www/html/vendor/laravel/framework/src/Illuminate/Database/Schema/MySqlBuilder.php:41
+/var/www/html/vendor/laravel/framework/src/Illuminate/Database/Schema/MySqlBuilder.php:147
+/var/www/html/vendor/laravel/framework/src/Illuminate/Database/Console/WipeCommand.php:71
+/var/www/html/vendor/laravel/framework/src/Illuminate/Database/Console/WipeCommand.php:48
+/var/www/html/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php:36
+/var/www/html/vendor/laravel/framework/src/Illuminate/Container/Util.php:41
+/var/www/html/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php:93
+/var/www/html/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php:35
+/var/www/html/vendor/laravel/framework/src/Illuminate/Container/Container.php:662
+/var/www/html/vendor/laravel/framework/src/Illuminate/Console/Command.php:211
+/var/www/html/vendor/symfony/console/Command/Command.php:326
+/var/www/html/vendor/laravel/framework/src/Illuminate/Console/Command.php:180
+/var/www/html/vendor/laravel/framework/src/Illuminate/Console/Concerns/CallsCommands.php:67
+/var/www/html/vendor/laravel/framework/src/Illuminate/Console/Concerns/CallsCommands.php:40
+/var/www/html/vendor/laravel/framework/src/Illuminate/Database/Console/Migrations/FreshCommand.php:44
+/var/www/html/vendor/laravel/framework/src/Illuminate/Console/View/Components/Task.php:37
+/var/www/html/vendor/laravel/framework/src/Illuminate/Console/View/Components/Factory.php:58
+/var/www/html/vendor/laravel/framework/src/Illuminate/Database/Console/Migrations/FreshCommand.php:44
+/var/www/html/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php:36
+/var/www/html/vendor/laravel/framework/src/Illuminate/Container/Util.php:41
+/var/www/html/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php:93
+/var/www/html/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php:35
+/var/www/html/vendor/laravel/framework/src/Illuminate/Container/Container.php:662
+/var/www/html/vendor/laravel/framework/src/Illuminate/Console/Command.php:211
+/var/www/html/vendor/symfony/console/Command/Command.php:326
+/var/www/html/vendor/laravel/framework/src/Illuminate/Console/Command.php:180
+/var/www/html/vendor/symfony/console/Application.php:1078
+/var/www/html/vendor/symfony/console/Application.php:324
+/var/www/html/vendor/symfony/console/Application.php:175
+/var/www/html/vendor/laravel/framework/src/Illuminate/Console/Application.php:162
+/var/www/html/vendor/laravel/framework/src/Illuminate/Foundation/Console/Kernel.php:400
+/var/www/html/vendor/laravel/framework/src/Illuminate/Testing/PendingCommand.php:297
+/var/www/html/vendor/laravel/framework/src/Illuminate/Testing/PendingCommand.php:484
+/var/www/html/vendor/laravel/framework/src/Illuminate/Foundation/Testing/Concerns/InteractsWithConsole.php:80
+/var/www/html/vendor/laravel/framework/src/Illuminate/Foundation/Testing/RefreshDatabase.php:73
+/var/www/html/vendor/laravel/framework/src/Illuminate/Foundation/Testing/RefreshDatabase.php:23
+/var/www/html/vendor/laravel/framework/src/Illuminate/Foundation/Testing/Concerns/InteractsWithTestCaseLifecycle.php:183
+/var/www/html/vendor/laravel/framework/src/Illuminate/Foundation/Testing/Concerns/InteractsWithTestCaseLifecycle.php:84
+/var/www/html/vendor/laravel/framework/src/Illuminate/Foundation/Testing/TestCase.php:40</error>
+        </testcase>
+        <testcase name="test_email_verification_status_is_unchanged_when_the_email_address_is_unchanged" file="/var/www/html/tests/Feature/ProfileTest.php" line="46" class="Tests\Feature\ProfileTest" classname="Tests.Feature.ProfileTest" assertions="0" time="0.000000">
+          <error type="Illuminate\Database\QueryException">Tests\Feature\ProfileTest::test_email_verification_status_is_unchanged_when_the_email_address_is_unchanged
+Illuminate\Database\QueryException: SQLSTATE[HY000] [2002] php_network_getaddresses: getaddrinfo for mysql failed: Try again (Connection: mysql, SQL: select table_name as `name`, (data_length + index_length) as `size`, table_comment as `comment`, engine as `engine`, table_collation as `collation` from information_schema.tables where table_schema = 'ictepmms' and table_type in ('BASE TABLE', 'SYSTEM VERSIONED') order by table_name)
+
+/var/www/html/vendor/laravel/framework/src/Illuminate/Database/Connection.php:829
+/var/www/html/vendor/laravel/framework/src/Illuminate/Database/Connection.php:983
+/var/www/html/vendor/laravel/framework/src/Illuminate/Database/Connection.php:962
+/var/www/html/vendor/laravel/framework/src/Illuminate/Database/Connection.php:785
+/var/www/html/vendor/laravel/framework/src/Illuminate/Database/Connection.php:414
+/var/www/html/vendor/laravel/framework/src/Illuminate/Database/Connection.php:401
+/var/www/html/vendor/laravel/framework/src/Illuminate/Database/Schema/MySqlBuilder.php:41
+/var/www/html/vendor/laravel/framework/src/Illuminate/Database/Schema/MySqlBuilder.php:147
+/var/www/html/vendor/laravel/framework/src/Illuminate/Database/Console/WipeCommand.php:71
+/var/www/html/vendor/laravel/framework/src/Illuminate/Database/Console/WipeCommand.php:48
+/var/www/html/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php:36
+/var/www/html/vendor/laravel/framework/src/Illuminate/Container/Util.php:41
+/var/www/html/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php:93
+/var/www/html/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php:35
+/var/www/html/vendor/laravel/framework/src/Illuminate/Container/Container.php:662
+/var/www/html/vendor/laravel/framework/src/Illuminate/Console/Command.php:211
+/var/www/html/vendor/symfony/console/Command/Command.php:326
+/var/www/html/vendor/laravel/framework/src/Illuminate/Console/Command.php:180
+/var/www/html/vendor/laravel/framework/src/Illuminate/Console/Concerns/CallsCommands.php:67
+/var/www/html/vendor/laravel/framework/src/Illuminate/Console/Concerns/CallsCommands.php:40
+/var/www/html/vendor/laravel/framework/src/Illuminate/Database/Console/Migrations/FreshCommand.php:44
+/var/www/html/vendor/laravel/framework/src/Illuminate/Console/View/Components/Task.php:37
+/var/www/html/vendor/laravel/framework/src/Illuminate/Console/View/Components/Factory.php:58
+/var/www/html/vendor/laravel/framework/src/Illuminate/Database/Console/Migrations/FreshCommand.php:44
+/var/www/html/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php:36
+/var/www/html/vendor/laravel/framework/src/Illuminate/Container/Util.php:41
+/var/www/html/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php:93
+/var/www/html/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php:35
+/var/www/html/vendor/laravel/framework/src/Illuminate/Container/Container.php:662
+/var/www/html/vendor/laravel/framework/src/Illuminate/Console/Command.php:211
+/var/www/html/vendor/symfony/console/Command/Command.php:326
+/var/www/html/vendor/laravel/framework/src/Illuminate/Console/Command.php:180
+/var/www/html/vendor/symfony/console/Application.php:1078
+/var/www/html/vendor/symfony/console/Application.php:324
+/var/www/html/vendor/symfony/console/Application.php:175
+/var/www/html/vendor/laravel/framework/src/Illuminate/Console/Application.php:162
+/var/www/html/vendor/laravel/framework/src/Illuminate/Foundation/Console/Kernel.php:400
+/var/www/html/vendor/laravel/framework/src/Illuminate/Testing/PendingCommand.php:297
+/var/www/html/vendor/laravel/framework/src/Illuminate/Testing/PendingCommand.php:484
+/var/www/html/vendor/laravel/framework/src/Illuminate/Foundation/Testing/Concerns/InteractsWithConsole.php:80
+/var/www/html/vendor/laravel/framework/src/Illuminate/Foundation/Testing/RefreshDatabase.php:73
+/var/www/html/vendor/laravel/framework/src/Illuminate/Foundation/Testing/RefreshDatabase.php:23
+/var/www/html/vendor/laravel/framework/src/Illuminate/Foundation/Testing/Concerns/InteractsWithTestCaseLifecycle.php:183
+/var/www/html/vendor/laravel/framework/src/Illuminate/Foundation/Testing/Concerns/InteractsWithTestCaseLifecycle.php:84
+/var/www/html/vendor/laravel/framework/src/Illuminate/Foundation/Testing/TestCase.php:40</error>
+        </testcase>
+        <testcase name="test_user_can_delete_their_account" file="/var/www/html/tests/Feature/ProfileTest.php" line="64" class="Tests\Feature\ProfileTest" classname="Tests.Feature.ProfileTest" assertions="0" time="0.000000">
+          <error type="Illuminate\Database\QueryException">Tests\Feature\ProfileTest::test_user_can_delete_their_account
+Illuminate\Database\QueryException: SQLSTATE[HY000] [2002] php_network_getaddresses: getaddrinfo for mysql failed: Try again (Connection: mysql, SQL: select table_name as `name`, (data_length + index_length) as `size`, table_comment as `comment`, engine as `engine`, table_collation as `collation` from information_schema.tables where table_schema = 'ictepmms' and table_type in ('BASE TABLE', 'SYSTEM VERSIONED') order by table_name)
+
+/var/www/html/vendor/laravel/framework/src/Illuminate/Database/Connection.php:829
+/var/www/html/vendor/laravel/framework/src/Illuminate/Database/Connection.php:983
+/var/www/html/vendor/laravel/framework/src/Illuminate/Database/Connection.php:962
+/var/www/html/vendor/laravel/framework/src/Illuminate/Database/Connection.php:785
+/var/www/html/vendor/laravel/framework/src/Illuminate/Database/Connection.php:414
+/var/www/html/vendor/laravel/framework/src/Illuminate/Database/Connection.php:401
+/var/www/html/vendor/laravel/framework/src/Illuminate/Database/Schema/MySqlBuilder.php:41
+/var/www/html/vendor/laravel/framework/src/Illuminate/Database/Schema/MySqlBuilder.php:147
+/var/www/html/vendor/laravel/framework/src/Illuminate/Database/Console/WipeCommand.php:71
+/var/www/html/vendor/laravel/framework/src/Illuminate/Database/Console/WipeCommand.php:48
+/var/www/html/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php:36
+/var/www/html/vendor/laravel/framework/src/Illuminate/Container/Util.php:41
+/var/www/html/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php:93
+/var/www/html/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php:35
+/var/www/html/vendor/laravel/framework/src/Illuminate/Container/Container.php:662
+/var/www/html/vendor/laravel/framework/src/Illuminate/Console/Command.php:211
+/var/www/html/vendor/symfony/console/Command/Command.php:326
+/var/www/html/vendor/laravel/framework/src/Illuminate/Console/Command.php:180
+/var/www/html/vendor/laravel/framework/src/Illuminate/Console/Concerns/CallsCommands.php:67
+/var/www/html/vendor/laravel/framework/src/Illuminate/Console/Concerns/CallsCommands.php:40
+/var/www/html/vendor/laravel/framework/src/Illuminate/Database/Console/Migrations/FreshCommand.php:44
+/var/www/html/vendor/laravel/framework/src/Illuminate/Console/View/Components/Task.php:37
+/var/www/html/vendor/laravel/framework/src/Illuminate/Console/View/Components/Factory.php:58
+/var/www/html/vendor/laravel/framework/src/Illuminate/Database/Console/Migrations/FreshCommand.php:44
+/var/www/html/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php:36
+/var/www/html/vendor/laravel/framework/src/Illuminate/Container/Util.php:41
+/var/www/html/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php:93
+/var/www/html/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php:35
+/var/www/html/vendor/laravel/framework/src/Illuminate/Container/Container.php:662
+/var/www/html/vendor/laravel/framework/src/Illuminate/Console/Command.php:211
+/var/www/html/vendor/symfony/console/Command/Command.php:326
+/var/www/html/vendor/laravel/framework/src/Illuminate/Console/Command.php:180
+/var/www/html/vendor/symfony/console/Application.php:1078
+/var/www/html/vendor/symfony/console/Application.php:324
+/var/www/html/vendor/symfony/console/Application.php:175
+/var/www/html/vendor/laravel/framework/src/Illuminate/Console/Application.php:162
+/var/www/html/vendor/laravel/framework/src/Illuminate/Foundation/Console/Kernel.php:400
+/var/www/html/vendor/laravel/framework/src/Illuminate/Testing/PendingCommand.php:297
+/var/www/html/vendor/laravel/framework/src/Illuminate/Testing/PendingCommand.php:484
+/var/www/html/vendor/laravel/framework/src/Illuminate/Foundation/Testing/Concerns/InteractsWithConsole.php:80
+/var/www/html/vendor/laravel/framework/src/Illuminate/Foundation/Testing/RefreshDatabase.php:73
+/var/www/html/vendor/laravel/framework/src/Illuminate/Foundation/Testing/RefreshDatabase.php:23
+/var/www/html/vendor/laravel/framework/src/Illuminate/Foundation/Testing/Concerns/InteractsWithTestCaseLifecycle.php:183
+/var/www/html/vendor/laravel/framework/src/Illuminate/Foundation/Testing/Concerns/InteractsWithTestCaseLifecycle.php:84
+/var/www/html/vendor/laravel/framework/src/Illuminate/Foundation/Testing/TestCase.php:40</error>
+        </testcase>
+        <testcase name="test_correct_password_must_be_provided_to_delete_account" file="/var/www/html/tests/Feature/ProfileTest.php" line="82" class="Tests\Feature\ProfileTest" classname="Tests.Feature.ProfileTest" assertions="0" time="0.000000">
+          <error type="Illuminate\Database\QueryException">Tests\Feature\ProfileTest::test_correct_password_must_be_provided_to_delete_account
+Illuminate\Database\QueryException: SQLSTATE[HY000] [2002] php_network_getaddresses: getaddrinfo for mysql failed: Try again (Connection: mysql, SQL: select table_name as `name`, (data_length + index_length) as `size`, table_comment as `comment`, engine as `engine`, table_collation as `collation` from information_schema.tables where table_schema = 'ictepmms' and table_type in ('BASE TABLE', 'SYSTEM VERSIONED') order by table_name)
+
+/var/www/html/vendor/laravel/framework/src/Illuminate/Database/Connection.php:829
+/var/www/html/vendor/laravel/framework/src/Illuminate/Database/Connection.php:983
+/var/www/html/vendor/laravel/framework/src/Illuminate/Database/Connection.php:962
+/var/www/html/vendor/laravel/framework/src/Illuminate/Database/Connection.php:785
+/var/www/html/vendor/laravel/framework/src/Illuminate/Database/Connection.php:414
+/var/www/html/vendor/laravel/framework/src/Illuminate/Database/Connection.php:401
+/var/www/html/vendor/laravel/framework/src/Illuminate/Database/Schema/MySqlBuilder.php:41
+/var/www/html/vendor/laravel/framework/src/Illuminate/Database/Schema/MySqlBuilder.php:147
+/var/www/html/vendor/laravel/framework/src/Illuminate/Database/Console/WipeCommand.php:71
+/var/www/html/vendor/laravel/framework/src/Illuminate/Database/Console/WipeCommand.php:48
+/var/www/html/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php:36
+/var/www/html/vendor/laravel/framework/src/Illuminate/Container/Util.php:41
+/var/www/html/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php:93
+/var/www/html/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php:35
+/var/www/html/vendor/laravel/framework/src/Illuminate/Container/Container.php:662
+/var/www/html/vendor/laravel/framework/src/Illuminate/Console/Command.php:211
+/var/www/html/vendor/symfony/console/Command/Command.php:326
+/var/www/html/vendor/laravel/framework/src/Illuminate/Console/Command.php:180
+/var/www/html/vendor/laravel/framework/src/Illuminate/Console/Concerns/CallsCommands.php:67
+/var/www/html/vendor/laravel/framework/src/Illuminate/Console/Concerns/CallsCommands.php:40
+/var/www/html/vendor/laravel/framework/src/Illuminate/Database/Console/Migrations/FreshCommand.php:44
+/var/www/html/vendor/laravel/framework/src/Illuminate/Console/View/Components/Task.php:37
+/var/www/html/vendor/laravel/framework/src/Illuminate/Console/View/Components/Factory.php:58
+/var/www/html/vendor/laravel/framework/src/Illuminate/Database/Console/Migrations/FreshCommand.php:44
+/var/www/html/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php:36
+/var/www/html/vendor/laravel/framework/src/Illuminate/Container/Util.php:41
+/var/www/html/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php:93
+/var/www/html/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php:35
+/var/www/html/vendor/laravel/framework/src/Illuminate/Container/Container.php:662
+/var/www/html/vendor/laravel/framework/src/Illuminate/Console/Command.php:211
+/var/www/html/vendor/symfony/console/Command/Command.php:326
+/var/www/html/vendor/laravel/framework/src/Illuminate/Console/Command.php:180
+/var/www/html/vendor/symfony/console/Application.php:1078
+/var/www/html/vendor/symfony/console/Application.php:324
+/var/www/html/vendor/symfony/console/Application.php:175
+/var/www/html/vendor/laravel/framework/src/Illuminate/Console/Application.php:162
+/var/www/html/vendor/laravel/framework/src/Illuminate/Foundation/Console/Kernel.php:400
+/var/www/html/vendor/laravel/framework/src/Illuminate/Testing/PendingCommand.php:297
+/var/www/html/vendor/laravel/framework/src/Illuminate/Testing/PendingCommand.php:484
+/var/www/html/vendor/laravel/framework/src/Illuminate/Foundation/Testing/Concerns/InteractsWithConsole.php:80
+/var/www/html/vendor/laravel/framework/src/Illuminate/Foundation/Testing/RefreshDatabase.php:73
+/var/www/html/vendor/laravel/framework/src/Illuminate/Foundation/Testing/RefreshDatabase.php:23
+/var/www/html/vendor/laravel/framework/src/Illuminate/Foundation/Testing/Concerns/InteractsWithTestCaseLifecycle.php:183
+/var/www/html/vendor/laravel/framework/src/Illuminate/Foundation/Testing/Concerns/InteractsWithTestCaseLifecycle.php:84
+/var/www/html/vendor/laravel/framework/src/Illuminate/Foundation/Testing/TestCase.php:40</error>
+        </testcase>
+      </testsuite>
+    </testsuite>
+  </testsuite>
+</testsuites>
