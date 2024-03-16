@@ -4,7 +4,7 @@ networks:
   laravel:
 
 services:
-  docker_laravel_app:
+  site:
     build:
       context: .
       dockerfile: nginx.dev.dockerfile
@@ -154,7 +154,7 @@ services:
     volumes:
       - ./src:/var/www/html:delegated
     depends_on:
-      - docker_laravel_app
+      - site
       - selenium
     working_dir: /var/www/html
     user: laravel

@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <testsuites>
-  <testsuite name="/var/www/html/phpunit.xml" tests="25" assertions="2" errors="23" failures="0" skipped="0" time="0.058832">
-    <testsuite name="Unit" tests="1" assertions="1" errors="0" failures="0" skipped="0" time="0.011101">
-      <testsuite name="Tests\Unit\ExampleTest" file="/var/www/html/tests/Unit/ExampleTest.php" tests="1" assertions="1" errors="0" failures="0" skipped="0" time="0.011101">
-        <testcase name="test_that_true_is_true" file="/var/www/html/tests/Unit/ExampleTest.php" line="12" class="Tests\Unit\ExampleTest" classname="Tests.Unit.ExampleTest" assertions="1" time="0.011101"/>
+  <testsuite name="/var/www/html/phpunit.xml" tests="25" assertions="2" errors="23" failures="0" skipped="0" time="0.054081">
+    <testsuite name="Unit" tests="1" assertions="1" errors="0" failures="0" skipped="0" time="0.014604">
+      <testsuite name="Tests\Unit\ExampleTest" file="/var/www/html/tests/Unit/ExampleTest.php" tests="1" assertions="1" errors="0" failures="0" skipped="0" time="0.014604">
+        <testcase name="test_that_true_is_true" file="/var/www/html/tests/Unit/ExampleTest.php" line="12" class="Tests\Unit\ExampleTest" classname="Tests.Unit.ExampleTest" assertions="1" time="0.014604"/>
       </testsuite>
     </testsuite>
-    <testsuite name="Feature" tests="24" assertions="1" errors="23" failures="0" skipped="0" time="0.047731">
+    <testsuite name="Feature" tests="24" assertions="1" errors="23" failures="0" skipped="0" time="0.039477">
       <testsuite name="Tests\Feature\Auth\AuthenticationTest" file="/var/www/html/tests/Feature/Auth/AuthenticationTest.php" tests="4" assertions="0" errors="4" failures="0" skipped="0" time="0.000000">
         <testcase name="test_login_screen_can_be_rendered" file="/var/www/html/tests/Feature/Auth/AuthenticationTest.php" line="14" class="Tests\Feature\Auth\AuthenticationTest" classname="Tests.Feature.Auth.AuthenticationTest" assertions="0" time="0.000000">
           <error type="Illuminate\Database\QueryException">Tests\Feature\Auth\AuthenticationTest::test_login_screen_can_be_rendered
@@ -919,8 +919,8 @@ Illuminate\Database\QueryException: SQLSTATE[HY000] [2002] php_network_getaddres
 /var/www/html/vendor/laravel/framework/src/Illuminate/Foundation/Testing/TestCase.php:40</error>
         </testcase>
       </testsuite>
-      <testsuite name="Tests\Feature\ExampleTest" file="/var/www/html/tests/Feature/ExampleTest.php" tests="1" assertions="1" errors="0" failures="0" skipped="0" time="0.047731">
-        <testcase name="test_the_application_returns_a_successful_response" file="/var/www/html/tests/Feature/ExampleTest.php" line="13" class="Tests\Feature\ExampleTest" classname="Tests.Feature.ExampleTest" assertions="1" time="0.047731"/>
+      <testsuite name="Tests\Feature\ExampleTest" file="/var/www/html/tests/Feature/ExampleTest.php" tests="1" assertions="1" errors="0" failures="0" skipped="0" time="0.039477">
+        <testcase name="test_the_application_returns_a_successful_response" file="/var/www/html/tests/Feature/ExampleTest.php" line="13" class="Tests\Feature\ExampleTest" classname="Tests.Feature.ExampleTest" assertions="1" time="0.039477"/>
       </testsuite>
       <testsuite name="Tests\Feature\ProfileTest" file="/var/www/html/tests/Feature/ProfileTest.php" tests="5" assertions="0" errors="5" failures="0" skipped="0" time="0.000000">
         <testcase name="test_profile_page_is_displayed" file="/var/www/html/tests/Feature/ProfileTest.php" line="13" class="Tests\Feature\ProfileTest" classname="Tests.Feature.ProfileTest" assertions="0" time="0.000000">
