@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE coverage SYSTEM "http://cobertura.sourceforge.net/xml/coverage-04.dtd">
-<coverage line-rate="0.10650887573964" branch-rate="0" lines-covered="18" lines-valid="169" branches-covered="0" branches-valid="0" complexity="59" version="0.4" timestamp="1709013038">
+<coverage line-rate="0.10650887573964" branch-rate="0" lines-covered="18" lines-valid="169" branches-covered="0" branches-valid="0" complexity="59" version="0.4" timestamp="1709604939">
   <sources>
     <source>/var/www/html/app</source>
   </sources>
@@ -692,6 +692,86 @@
           <lines>
             <line number="11" hits="0"/>
           </lines>
+        </class>
+      </classes>
+    </package>
+    <package name="Models/Client.php" line-rate="0" branch-rate="0" complexity="0">
+      <classes>
+        <class name="App\Models\Client" filename="Models/Client.php" line-rate="0" branch-rate="0" complexity="0">
+          <methods/>
+          <lines/>
+        </class>
+      </classes>
+    </package>
+    <package name="Models/Hardware.php" line-rate="0" branch-rate="0" complexity="0">
+      <classes>
+        <class name="App\Models\Hardware" filename="Models/Hardware.php" line-rate="0" branch-rate="0" complexity="0">
+          <methods/>
+          <lines/>
+        </class>
+      </classes>
+    </package>
+    <package name="Models/HardwareLogs.php" line-rate="0" branch-rate="0" complexity="0">
+      <classes>
+        <class name="App\Models\HardwareLogs" filename="Models/HardwareLogs.php" line-rate="0" branch-rate="0" complexity="0">
+          <methods/>
+          <lines/>
+        </class>
+      </classes>
+    </package>
+    <package name="Models/HardwareSpecification.php" line-rate="0" branch-rate="0" complexity="0">
+      <classes>
+        <class name="App\Models\HardwareSpecification" filename="Models/HardwareSpecification.php" line-rate="0" branch-rate="0" complexity="0">
+          <methods/>
+          <lines/>
+        </class>
+      </classes>
+    </package>
+    <package name="Models/OfficeUnit.php" line-rate="0" branch-rate="0" complexity="0">
+      <classes>
+        <class name="App\Models\OfficeUnit" filename="Models/OfficeUnit.php" line-rate="0" branch-rate="0" complexity="0">
+          <methods/>
+          <lines/>
+        </class>
+      </classes>
+    </package>
+    <package name="Models/Software.php" line-rate="0" branch-rate="0" complexity="0">
+      <classes>
+        <class name="App\Models\Software" filename="Models/Software.php" line-rate="0" branch-rate="0" complexity="0">
+          <methods/>
+          <lines/>
+        </class>
+      </classes>
+    </package>
+    <package name="Models/SoftwareInstalled.php" line-rate="0" branch-rate="0" complexity="0">
+      <classes>
+        <class name="App\Models\SoftwareInstalled" filename="Models/SoftwareInstalled.php" line-rate="0" branch-rate="0" complexity="0">
+          <methods/>
+          <lines/>
+        </class>
+      </classes>
+    </package>
+    <package name="Models/SoftwareInstalledLogs.php" line-rate="0" branch-rate="0" complexity="0">
+      <classes>
+        <class name="App\Models\SoftwareInstalledLogs" filename="Models/SoftwareInstalledLogs.php" line-rate="0" branch-rate="0" complexity="0">
+          <methods/>
+          <lines/>
+        </class>
+      </classes>
+    </package>
+    <package name="Models/Transaction.php" line-rate="0" branch-rate="0" complexity="0">
+      <classes>
+        <class name="App\Models\Transaction" filename="Models/Transaction.php" line-rate="0" branch-rate="0" complexity="0">
+          <methods/>
+          <lines/>
+        </class>
+      </classes>
+    </package>
+    <package name="Models/Unit.php" line-rate="0" branch-rate="0" complexity="0">
+      <classes>
+        <class name="App\Models\Units" filename="Models/Unit.php" line-rate="0" branch-rate="0" complexity="0">
+          <methods/>
+          <lines/>
         </class>
       </classes>
     </package>
