@@ -107,7 +107,7 @@ services:
     volumes:
       - ./src:/var/www/html
     working_dir: /var/www/html
-    entrypoint: ["npm", "run", "build"]
+    entrypoint: ["npm", "run", "dev"]
     networks:
       - laravel
   npm:

@@ -3,6 +3,7 @@
 namespace App\Livewire;
 
 use Livewire\Component;
+use App\Models\User;
 
 class Counter extends Component
 {
@@ -10,18 +11,23 @@ class Counter extends Component
 
     public $color = null;
 
+    public $users;
+
     public function render()
     {
 
         return view('livewire.counter');
-        dd($name);
+        // dd($name);
     }
 
     public function mount()
     {
         $this->name = 'William';
         $this->color = 'red';
-        // dd($this->name);
+
+        $this->users = User::all();
+        // dd($this->users);
+
     }
 
     public function changeName()

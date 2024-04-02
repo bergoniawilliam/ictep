@@ -10,6 +10,9 @@
             <div class="bg-white overflow-hidden shadow-sm sm:rounded-lg">
                 <div class="p-6 text-gray-900">
                     {{ __("You're logged in!") }}
+                    {{ Auth::user()->office_unit->office_unit_name }}
+                    <br>
+                    Office Created At: {{ Auth::user()->office_unit->created_at }}
                 </div>
             </div>
         </div>
